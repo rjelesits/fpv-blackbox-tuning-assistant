@@ -1,0 +1,5 @@
+# Preserve exact flight-data bytes and the checksums in the backup manifest.
+flight-data/** -text
+# Imported snapshots retain their original Windows line endings and final blank lines.
+flight-data/library/** whitespace=cr-at-eol,-blank-at-eof
+flight-data/reports/** whitespace=cr-at-eol,-blank-at-eof

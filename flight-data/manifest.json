@@ -1,0 +1,266 @@
+{
+  "snapshotDate": "2026-10-10",
+  "files": [
+    {
+      "path": "library/log-library.json",
+      "kind": "library-index",
+      "bytes": 1635,
+      "sha256": "00FD7951A5A84A5FCF6C2C727067278BBB51A8D14764350B4D121284963EEC61"
+    },
+    {
+      "path": "library/Logs/BEFH BETAFPVG473_V3--ef2698a8/3BTFL_BLACKBOX_LOG_20260929_232201_BETAFPVG473_V3.analysis.json",
+      "kind": "analysis-json",
+      "bytes": 94509,
+      "sha256": "2D7507F3F0F48B4677075F7026BC4226ADD250373F26E37F317FAE6C3605491A"
+    },
+    {
+      "path": "library/Logs/BEFH BETAFPVG473_V3--ef2698a8/3BTFL_BLACKBOX_LOG_20260929_232201_BETAFPVG473_V3.BBL",
+      "kind": "blackbox",
+      "bytes": 13505792,
+      "sha256": "C5EC90D9CD3E91CF9AB2472D6342EEE6ECC92F071FC5AFC095360CDE4FEFDAC6"
+    },
+    {
+      "path": "library/Logs/BEFH BETAFPVG473_V3--ef2698a8/BTFL_BLACKBOX_LOG_20260924_214421_BETAFPVG473_V3.analysis.json",
+      "kind": "analysis-json",
+      "bytes": 146642,
+      "sha256": "54426AC30B0D888EB75B1843291C2BF262F0DFA6CD90C82A9CB29023A7C6AEC5"
+    },
+    {
+      "path": "library/Logs/BEFH BETAFPVG473_V3--ef2698a8/BTFL_BLACKBOX_LOG_20260924_214421_BETAFPVG473_V3.BBL",
+      "kind": "blackbox",
+      "bytes": 16777216,
+      "sha256": "F220E3D0B50FE8929DF62FFE924914B17FD0FD837FEBA800FB36927C48F44FB1"
+    },
+    {
+      "path": "library/Logs/DS16 Logflug mit acro-angle-horizon--9f761d5e/erster versuch mit ds16.analysis.json",
+      "kind": "analysis-json",
+      "bytes": 15358,
+      "sha256": "26FEB233F48E2FA46445F227EF37C569C7A0ACAE2D016A89820B7F3559FA5AA9"
+    },
+    {
+      "path": "library/Logs/DS16 Logflug mit acro-angle-horizon--9f761d5e/erster versuch mit ds16.BBL",
+      "kind": "blackbox",
+      "bytes": 7427328,
+      "sha256": "7DB63A1855D2CBBD04A5C8B2465C16607C273314A30D0C1B16A8BD540F00F471"
+    },
+    {
+      "path": "raw/BTFL_BLACKBOX_LOG_DARKSTAR_16_20261007_174511_BETAFPVG473_V3.BBL",
+      "kind": "blackbox",
+      "bytes": 16777216,
+      "sha256": "092374994B5D9C519B8CA9203A539047E62930E76247AE55C81DD015207E8D03"
+    },
+    {
+      "path": "raw/Chirp_BTFL_BLACKBOX_LOG_DARKSTAR_16_20261007_182927_BETAFPVG473_V3.BBL",
+      "kind": "blackbox",
+      "bytes": 16777216,
+      "sha256": "118C14DD49A54BCD3B96364958AA03047C511BBCD27DC52F329E9D98748D5F6B"
+    },
+    {
+      "path": "reports/ANALYSE-DS16-20261007.md",
+      "kind": "analysis-markdown",
+      "bytes": 2587,
+      "sha256": "DE67F418F36D950671EC3802A09D416AE2141E83DA0845D28CF2276B3D64B359"
+    },
+    {
+      "path": "reports/ANALYSE-3BTFL-20260929.md",
+      "kind": "analysis-markdown",
+      "bytes": 2966,
+      "sha256": "962E3CACE65B0CA2638C1365C04EFF5E6BEDE9DDAC6E12678A8D68B129BA6423"
+    },
+    {
+      "path": "reports/ANALYSE-3BTFL-20260929-work-version.md",
+      "kind": "analysis-markdown",
+      "bytes": 2976,
+      "sha256": "3522EA827353CB8C6002606BBE2C4E54551FC16DDAA68E0500C4BEE7C09629A6"
+    },
+    {
+      "path": "reports/ANALYSE-aBTFL-20261004.md",
+      "kind": "analysis-markdown",
+      "bytes": 1900,
+      "sha256": "056298D512A3538458A761C3F89857A89DB5FA4E132942FC64775BA38DBCB710"
+    },
+    {
+      "path": "archives/2026-09-25-decoded.zip",
+      "kind": "decoded-archive",
+      "bytes": 7760069,
+      "sha256": "6B64DB956F133D9B0FA5491A821AF5676B4ADA2F07D41496799860F6CD458C3F"
+    },
+    {
+      "path": "archives/2026-10-07-DS16-decoded.zip",
+      "kind": "decoded-archive",
+      "bytes": 41402965,
+      "sha256": "7400FE33385D556E985A6E9591DE169A516A422594986B65F88B0F1C308E67EE"
+    }
+  ],
+  "rawLogAliases": [
+    {
+      "originalName": "BTFL_BLACKBOX_LOG_DARKSTAR_16_20261007_174511_BETAFPVG473_V3.BBL",
+      "storedPath": "raw/BTFL_BLACKBOX_LOG_DARKSTAR_16_20261007_174511_BETAFPVG473_V3.BBL",
+      "sha256": "092374994B5D9C519B8CA9203A539047E62930E76247AE55C81DD015207E8D03"
+    }
+  ],
+  "archiveContents": [
+    {
+      "archive": "2026-09-25-decoded.zip",
+      "entry": "2BTFL_BLACKBOX_LOG_20260925_175905_BETAFPVG473_V3.01.csv",
+      "bytes": 39443330,
+      "sha256": "010B6A861C9B718C9C902F34A62EA842592C0EB45AFD9AE523521BCBA6FEDBFC"
+    },
+    {
+      "archive": "2026-09-25-decoded.zip",
+      "entry": "2BTFL_BLACKBOX_LOG_20260925_175905_BETAFPVG473_V3.01.event",
+      "bytes": 681,
+      "sha256": "72460E8339D473C57201E1BBAC279612C8DCEAF2A52E29A146CBDB2497FF10D2"
+    },
+    {
+      "archive": "2026-09-25-decoded.zip",
+      "entry": "2BTFL_BLACKBOX_LOG_20260925_175905_BETAFPVG473_V3.01.headers.csv",
+      "bytes": 5529,
+      "sha256": "6DBF3DCEF76DB40B41C18057AAF0387649490B9B63C66BD5DC0DA0C82B922481"
+    },
+    {
+      "archive": "2026-09-25-decoded.zip",
+      "entry": "2BTFL_BLACKBOX_LOG_20260925_175905_BETAFPVG473_V3.02.csv",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "archive": "2026-09-25-decoded.zip",
+      "entry": "2BTFL_BLACKBOX_LOG_20260925_175905_BETAFPVG473_V3.02.event",
+      "bytes": 102,
+      "sha256": "3332B5B9A0E5CE3DCCF7DC6C3240249B135779474205E216CE86C669DC6B2A10"
+    },
+    {
+      "archive": "2026-09-25-decoded.zip",
+      "entry": "2BTFL_BLACKBOX_LOG_20260925_175905_BETAFPVG473_V3.02.headers.csv",
+      "bytes": 5529,
+      "sha256": "5AA9140C408836748497E2A75CEA8DEB3CD01AFE520B4B6FD358FA305783D23A"
+    },
+    {
+      "archive": "2026-09-25-decoded.zip",
+      "entry": "2BTFL_BLACKBOX_LOG_20260925_175905_BETAFPVG473_V3.03.csv",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "archive": "2026-09-25-decoded.zip",
+      "entry": "2BTFL_BLACKBOX_LOG_20260925_175905_BETAFPVG473_V3.03.event",
+      "bytes": 102,
+      "sha256": "3332B5B9A0E5CE3DCCF7DC6C3240249B135779474205E216CE86C669DC6B2A10"
+    },
+    {
+      "archive": "2026-09-25-decoded.zip",
+      "entry": "2BTFL_BLACKBOX_LOG_20260925_175905_BETAFPVG473_V3.03.headers.csv",
+      "bytes": 5529,
+      "sha256": "6BBA2074AC3A89925C65517217C23C7D1783A38632E3F49B1AF674942F27F986"
+    },
+    {
+      "archive": "2026-09-25-decoded.zip",
+      "entry": "2BTFL_BLACKBOX_LOG_20260925_175905_BETAFPVG473_V3.04.csv",
+      "bytes": 6616975,
+      "sha256": "F8312A97EB7731A7C8C9A9AB5FFF7895E9C21CAD028BF5BC2CE3788CEB7114A0"
+    },
+    {
+      "archive": "2026-09-25-decoded.zip",
+      "entry": "2BTFL_BLACKBOX_LOG_20260925_175905_BETAFPVG473_V3.04.event",
+      "bytes": 334,
+      "sha256": "2868EA7BE0F59A96422BB7C83006E8A3C59FB686AC9AA954FE47837193825167"
+    },
+    {
+      "archive": "2026-09-25-decoded.zip",
+      "entry": "2BTFL_BLACKBOX_LOG_20260925_175905_BETAFPVG473_V3.04.headers.csv",
+      "bytes": 5529,
+      "sha256": "C2D157811DDC3D1A2544AE711696D04FF51144FEBE9512142E9610B370608080"
+    },
+    {
+      "archive": "2026-10-07-DS16-decoded.zip",
+      "entry": "Auswertung/BTFL_BLACKBOX_LOG_DARKSTAR_16_20261007_174511_BETAFPVG473_V3.01.csv",
+      "bytes": 22200323,
+      "sha256": "EE59BBC34373E864B11B9D9FD38C7807E6867A02824FF7B28BECEF1F43CB0569"
+    },
+    {
+      "archive": "2026-10-07-DS16-decoded.zip",
+      "entry": "Auswertung/BTFL_BLACKBOX_LOG_DARKSTAR_16_20261007_174511_BETAFPVG473_V3.01.event",
+      "bytes": 213,
+      "sha256": "132460A52FD75BCF788D6159A0693C909948D2BB1C94EAA13DBFB2D873E9AD32"
+    },
+    {
+      "archive": "2026-10-07-DS16-decoded.zip",
+      "entry": "Auswertung/BTFL_BLACKBOX_LOG_DARKSTAR_16_20261007_174511_BETAFPVG473_V3.01.headers.csv",
+      "bytes": 5320,
+      "sha256": "2C5BBDF6B68DDF0DD0A0EBC43EB8E222B51CB81EE0B13D69470272C4646BA027"
+    },
+    {
+      "archive": "2026-10-07-DS16-decoded.zip",
+      "entry": "Auswertung/BTFL_BLACKBOX_LOG_DARKSTAR_16_20261007_174511_BETAFPVG473_V3.02.csv",
+      "bytes": 66654265,
+      "sha256": "29D27B5072E0310E69FC70C72F03B138A80F388D0E8D681B053776B8D90C4E33"
+    },
+    {
+      "archive": "2026-10-07-DS16-decoded.zip",
+      "entry": "Auswertung/BTFL_BLACKBOX_LOG_DARKSTAR_16_20261007_174511_BETAFPVG473_V3.02.event",
+      "bytes": 213,
+      "sha256": "18D62E00E7558062FBDA3F484CF66CAD7A890DE5C9BEF91B6B74AD69CE2B6186"
+    },
+    {
+      "archive": "2026-10-07-DS16-decoded.zip",
+      "entry": "Auswertung/BTFL_BLACKBOX_LOG_DARKSTAR_16_20261007_174511_BETAFPVG473_V3.02.headers.csv",
+      "bytes": 5320,
+      "sha256": "95B251076F7F8F68192E4B08C59B33C8FAA64C38BAAA0BEC14EAE026DCF88334"
+    },
+    {
+      "archive": "2026-10-07-DS16-decoded.zip",
+      "entry": "Auswertung/BTFL_BLACKBOX_LOG_DARKSTAR_16_20261007_174511_BETAFPVG473_V3.03.csv",
+      "bytes": 59598175,
+      "sha256": "4FBB66BFC2F8560CC5207FA6C89FD7D4D0131206183113C2DF4C550D3A055A39"
+    },
+    {
+      "archive": "2026-10-07-DS16-decoded.zip",
+      "entry": "Auswertung/BTFL_BLACKBOX_LOG_DARKSTAR_16_20261007_174511_BETAFPVG473_V3.03.event",
+      "bytes": 38,
+      "sha256": "EC48C06D6FC0D8472F151987B69813528E0D843D6FC12607EE22B46A2DCDDFBF"
+    },
+    {
+      "archive": "2026-10-07-DS16-decoded.zip",
+      "entry": "Auswertung/BTFL_BLACKBOX_LOG_DARKSTAR_16_20261007_174511_BETAFPVG473_V3.03.headers.csv",
+      "bytes": 5320,
+      "sha256": "5C1015ECAED9CFB0212F4A3A8EBD7C33BF0F4786C9AFDB730A60382F1DBA4459"
+    },
+    {
+      "archive": "2026-10-07-DS16-decoded.zip",
+      "entry": "Auswertung/Chirp_BTFL_BLACKBOX_LOG_DARKSTAR_16_20261007_182927_BETAFPVG473_V3.01.csv",
+      "bytes": 36543968,
+      "sha256": "F2243AFE8FCA919E8553F94C1B11DBE89ED2DD0730EC0A14C2FF89C79E960F30"
+    },
+    {
+      "archive": "2026-10-07-DS16-decoded.zip",
+      "entry": "Auswertung/Chirp_BTFL_BLACKBOX_LOG_DARKSTAR_16_20261007_182927_BETAFPVG473_V3.01.event",
+      "bytes": 302,
+      "sha256": "0163F562DEB890A98874082CE194663E2A1ABE1E697802D1D813ADF4EB323E55"
+    },
+    {
+      "archive": "2026-10-07-DS16-decoded.zip",
+      "entry": "Auswertung/Chirp_BTFL_BLACKBOX_LOG_DARKSTAR_16_20261007_182927_BETAFPVG473_V3.01.headers.csv",
+      "bytes": 5473,
+      "sha256": "88D0561734C606C5397AE48C1B169F54C021736D0BE3DBA7B296FDF7F7F0469B"
+    },
+    {
+      "archive": "2026-10-07-DS16-decoded.zip",
+      "entry": "Auswertung/Chirp_BTFL_BLACKBOX_LOG_DARKSTAR_16_20261007_182927_BETAFPVG473_V3.02.csv",
+      "bytes": 102051181,
+      "sha256": "BAEEFBD9F1B1A4443FCF67E923428CDB961F19459C31A5CB69362DDD555A93B4"
+    },
+    {
+      "archive": "2026-10-07-DS16-decoded.zip",
+      "entry": "Auswertung/Chirp_BTFL_BLACKBOX_LOG_DARKSTAR_16_20261007_182927_BETAFPVG473_V3.02.event",
+      "bytes": 1191,
+      "sha256": "D18831E3E2F04314BF912533FBB1798FCD3500A3A46EE5E599F17B038904EE0B"
+    },
+    {
+      "archive": "2026-10-07-DS16-decoded.zip",
+      "entry": "Auswertung/Chirp_BTFL_BLACKBOX_LOG_DARKSTAR_16_20261007_182927_BETAFPVG473_V3.02.headers.csv",
+      "bytes": 5473,
+      "sha256": "C177204A577620849905644BF35CFF78E8B9A7DDAFE9892410D8F754C412A9B6"
+    }
+  ]
+}

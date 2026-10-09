@@ -55,3 +55,16 @@ docs/analysis/
 
 # Required redistributable decoder source archive
 !third_party/bbl_parser/v1.1.1/bbl_parser-v1.1.1-source.zip
+
+# Project flight data explicitly approved for this private repository
+!/flight-data/**/
+!/flight-data/**/*.bbl
+!/flight-data/**/*.BBL
+!/flight-data/**/*.bfl
+!/flight-data/**/*.BFL
+!/flight-data/**/*.csv
+!/flight-data/**/*.event
+!/flight-data/**/*.analysis.json
+!/flight-data/**/log-library.json
+!/flight-data/**/*.cli
+!/flight-data/archives/*.zip

@@ -1,0 +1,501 @@
+{
+  "Version": 1,
+  "DroneName": "DS16 Logflug mit acro-angle-horizon",
+  "OriginalFileName": "aBTFL_BLACKBOX_LOG_20261004_160250_BETAFPVG473_V3.BBL",
+  "StoredBlackboxFileName": "erster versuch mit ds16.BBL",
+  "Sha256": "7DB63A1855D2CBBD04A5C8B2465C16607C273314A30D0C1B16A8BD540F00F471",
+  "AnalyzedAtUtc": "2026-10-04T19:50:36.1232688Z",
+  "DecoderVersion": "1.1.1",
+  "DataQualityStatus": "I-/P-Flug-Frames dekodiert",
+  "HardwareCheckStatus": "Keine groben Auff\u00E4lligkeiten gemeldet",
+  "SessionCount": 3,
+  "FlightFrameCount": 200262,
+  "IFrameCount": 6260,
+  "PFrameCount": 194002,
+  "Sessions": [
+    {
+      "LogNumber": 1,
+      "TotalFrames": 68379,
+      "IFrames": 2137,
+      "PFrames": 66227,
+      "EventFrameCount": 5,
+      "LoopTimeMicroseconds": 125,
+      "Board": "BEFH BETAFPVG473_V3",
+      "FlightModeChangeCount": 1,
+      "FlightModeAvailable": true,
+      "FlightModeReason": "",
+      "FlightModeDurationSeconds": 63.099663,
+      "FlightModeTransitionCount": 0,
+      "FlightModeBoundaryEventCount": 1,
+      "FlightModes": [
+        {
+          "Mode": "Manuell/Acro (Betaflight-Standard ohne Angle/Horizon)",
+          "Samples": 63244,
+          "DurationSeconds": 63.099663
+        }
+      ],
+      "FlightModeTransitions": [],
+      "Firmware": "Betaflight 2026.6.2 (e0b7bb01b) STM32G474",
+      "MotorAssessmentAvailable": true,
+      "MotorAssessmentReason": "",
+      "MotorAssessmentSamples": 40735,
+      "MotorAssessmentDurationSeconds": 63.099663,
+      "MotorOutputBiasPercent": [
+        17.89731035123017,
+        -16.488250508174467,
+        13.916729596021185,
+        -13.916729596021185
+      ],
+      "ErpmBiasPercent": [
+        15.28394244339942,
+        -15.328897583924514,
+        12.898210364672202,
+        -12.898210364672224
+      ],
+      "StrongOutputDeviation": true,
+      "StrongErpmDeviation": false,
+      "SetpointTrackingAvailable": true,
+      "SetpointTrackingReason": "",
+      "SetpointTrackingSamples": 63244,
+      "SetpointTrackingDurationSeconds": 63.099663,
+      "SetpointTrackingAxes": [
+        {
+          "Axis": "Roll",
+          "MeanAbsoluteErrorDps": 4.34759028524445,
+          "Percentile95AbsoluteErrorDps": 9
+        },
+        {
+          "Axis": "Pitch",
+          "MeanAbsoluteErrorDps": 4.9969799506672565,
+          "Percentile95AbsoluteErrorDps": 12
+        },
+        {
+          "Axis": "Yaw",
+          "MeanAbsoluteErrorDps": 2.4651824679020935,
+          "Percentile95AbsoluteErrorDps": 6
+        }
+      ],
+      "PidActivityAvailable": true,
+      "PidActivityReason": "",
+      "PidActivitySamples": 63244,
+      "PidActivityDurationSeconds": 63.099663,
+      "PidActivityAxes": [
+        {
+          "Axis": "Roll",
+          "Terms": [
+            {
+              "Term": "P",
+              "MeanAbsolute": 6.415043324267915,
+              "RootMeanSquare": 32.729972123434656,
+              "PeakAbsolute": 1463
+            },
+            {
+              "Term": "I",
+              "MeanAbsolute": 6.642527354373537,
+              "RootMeanSquare": 18.62464653976722,
+              "PeakAbsolute": 400
+            },
+            {
+              "Term": "D",
+              "MeanAbsolute": 7.698848902662704,
+              "RootMeanSquare": 35.89977237135667,
+              "PeakAbsolute": 3280
+            },
+            {
+              "Term": "F",
+              "MeanAbsolute": 1.3082663968123458,
+              "RootMeanSquare": 4.5117328544805515,
+              "PeakAbsolute": 74
+            }
+          ],
+          "MissingTerms": []
+        },
+        {
+          "Axis": "Pitch",
+          "Terms": [
+            {
+              "Term": "P",
+              "MeanAbsolute": 7.674119284042755,
+              "RootMeanSquare": 30.47913298106119,
+              "PeakAbsolute": 1682
+            },
+            {
+              "Term": "I",
+              "MeanAbsolute": 55.924498766681424,
+              "RootMeanSquare": 63.4870591700135,
+              "PeakAbsolute": 400
+            },
+            {
+              "Term": "D",
+              "MeanAbsolute": 7.244782113718298,
+              "RootMeanSquare": 52.82528321225547,
+              "PeakAbsolute": 3898
+            },
+            {
+              "Term": "F",
+              "MeanAbsolute": 0.7838372019480109,
+              "RootMeanSquare": 2.610982894266239,
+              "PeakAbsolute": 43
+            }
+          ],
+          "MissingTerms": []
+        },
+        {
+          "Axis": "Yaw",
+          "Terms": [
+            {
+              "Term": "P",
+              "MeanAbsolute": 3.2727689583201567,
+              "RootMeanSquare": 9.383951779969426,
+              "PeakAbsolute": 533
+            },
+            {
+              "Term": "I",
+              "MeanAbsolute": 11.10524318512428,
+              "RootMeanSquare": 16.292427814736897,
+              "PeakAbsolute": 260
+            },
+            {
+              "Term": "F",
+              "MeanAbsolute": 1.0491271899310606,
+              "RootMeanSquare": 2.4894470839695786,
+              "PeakAbsolute": 38
+            }
+          ],
+          "MissingTerms": [
+            "D"
+          ]
+        }
+      ]
+    },
+    {
+      "LogNumber": 2,
+      "TotalFrames": 65330,
+      "IFrames": 2042,
+      "PFrames": 63274,
+      "EventFrameCount": 5,
+      "LoopTimeMicroseconds": 125,
+      "Board": "BEFH BETAFPVG473_V3",
+      "FlightModeChangeCount": 1,
+      "FlightModeAvailable": true,
+      "FlightModeReason": "",
+      "FlightModeDurationSeconds": 61.795643,
+      "FlightModeTransitionCount": 0,
+      "FlightModeBoundaryEventCount": 1,
+      "FlightModes": [
+        {
+          "Mode": "Stabilisiert sich selbst (Angle)",
+          "Samples": 61937,
+          "DurationSeconds": 61.795643
+        }
+      ],
+      "FlightModeTransitions": [],
+      "Firmware": "Betaflight 2026.6.2 (e0b7bb01b) STM32G474",
+      "MotorAssessmentAvailable": true,
+      "MotorAssessmentReason": "",
+      "MotorAssessmentSamples": 51386,
+      "MotorAssessmentDurationSeconds": 63.130767,
+      "MotorOutputBiasPercent": [
+        18.24871480553602,
+        -19.738038207180352,
+        14.002260644367997,
+        -14.002260644367997
+      ],
+      "ErpmBiasPercent": [
+        16.212492834024687,
+        -19.653748925032406,
+        13.764177006771403,
+        -13.764177006771403
+      ],
+      "StrongOutputDeviation": true,
+      "StrongErpmDeviation": false,
+      "SetpointTrackingAvailable": true,
+      "SetpointTrackingReason": "",
+      "SetpointTrackingSamples": 61937,
+      "SetpointTrackingDurationSeconds": 63.130767,
+      "SetpointTrackingAxes": [
+        {
+          "Axis": "Roll",
+          "MeanAbsoluteErrorDps": 5.768926489820301,
+          "Percentile95AbsoluteErrorDps": 9
+        },
+        {
+          "Axis": "Pitch",
+          "MeanAbsoluteErrorDps": 7.8352680949997575,
+          "Percentile95AbsoluteErrorDps": 15
+        },
+        {
+          "Axis": "Yaw",
+          "MeanAbsoluteErrorDps": 2.5006538902433117,
+          "Percentile95AbsoluteErrorDps": 6
+        }
+      ],
+      "PidActivityAvailable": true,
+      "PidActivityReason": "",
+      "PidActivitySamples": 61937,
+      "PidActivityDurationSeconds": 63.130767,
+      "PidActivityAxes": [
+        {
+          "Axis": "Roll",
+          "Terms": [
+            {
+              "Term": "P",
+              "MeanAbsolute": 8.600271243360188,
+              "RootMeanSquare": 55.840464707492615,
+              "PeakAbsolute": 1990
+            },
+            {
+              "Term": "I",
+              "MeanAbsolute": 7.250544908536093,
+              "RootMeanSquare": 17.037526167242664,
+              "PeakAbsolute": 188
+            },
+            {
+              "Term": "D",
+              "MeanAbsolute": 7.738137139351276,
+              "RootMeanSquare": 45.45384903335091,
+              "PeakAbsolute": 2997
+            },
+            {
+              "Term": "F",
+              "MeanAbsolute": 0,
+              "RootMeanSquare": 0,
+              "PeakAbsolute": 0
+            }
+          ],
+          "MissingTerms": []
+        },
+        {
+          "Axis": "Pitch",
+          "Terms": [
+            {
+              "Term": "P",
+              "MeanAbsolute": 12.037182943959184,
+              "RootMeanSquare": 69.0772152908937,
+              "PeakAbsolute": 2420
+            },
+            {
+              "Term": "I",
+              "MeanAbsolute": 60.32227909004311,
+              "RootMeanSquare": 66.53522641941623,
+              "PeakAbsolute": 150
+            },
+            {
+              "Term": "D",
+              "MeanAbsolute": 9.655827695884527,
+              "RootMeanSquare": 78.35741702161391,
+              "PeakAbsolute": 4707
+            },
+            {
+              "Term": "F",
+              "MeanAbsolute": 0,
+              "RootMeanSquare": 0,
+              "PeakAbsolute": 0
+            }
+          ],
+          "MissingTerms": []
+        },
+        {
+          "Axis": "Yaw",
+          "Terms": [
+            {
+              "Term": "P",
+              "MeanAbsolute": 3.3365032210149024,
+              "RootMeanSquare": 12.79838088856343,
+              "PeakAbsolute": 523
+            },
+            {
+              "Term": "I",
+              "MeanAbsolute": 11.768555144743853,
+              "RootMeanSquare": 20.85280900763076,
+              "PeakAbsolute": 320
+            },
+            {
+              "Term": "F",
+              "MeanAbsolute": 0.8629575213523419,
+              "RootMeanSquare": 2.3954341670092005,
+              "PeakAbsolute": 32
+            }
+          ],
+          "MissingTerms": [
+            "D"
+          ]
+        }
+      ]
+    },
+    {
+      "LogNumber": 3,
+      "TotalFrames": 66597,
+      "IFrames": 2081,
+      "PFrames": 64501,
+      "EventFrameCount": 5,
+      "LoopTimeMicroseconds": 125,
+      "Board": "BEFH BETAFPVG473_V3",
+      "FlightModeChangeCount": 1,
+      "FlightModeAvailable": true,
+      "FlightModeReason": "",
+      "FlightModeDurationSeconds": 64.844948,
+      "FlightModeTransitionCount": 0,
+      "FlightModeBoundaryEventCount": 1,
+      "FlightModes": [
+        {
+          "Mode": "Horizon (Selbstaufrichtung nahe Stick-Mitte)",
+          "Samples": 64992,
+          "DurationSeconds": 64.844948
+        }
+      ],
+      "FlightModeTransitions": [],
+      "Firmware": "Betaflight 2026.6.2 (e0b7bb01b) STM32G474",
+      "MotorAssessmentAvailable": true,
+      "MotorAssessmentReason": "",
+      "MotorAssessmentSamples": 54831,
+      "MotorAssessmentDurationSeconds": 64.844948,
+      "MotorOutputBiasPercent": [
+        17.153121463292358,
+        -19.980645863370526,
+        15.412566147868667,
+        -15.412566147868652
+      ],
+      "ErpmBiasPercent": [
+        15.659745996401654,
+        -18.76549811357527,
+        14.253276836418092,
+        -14.253276836418092
+      ],
+      "StrongOutputDeviation": true,
+      "StrongErpmDeviation": false,
+      "SetpointTrackingAvailable": true,
+      "SetpointTrackingReason": "",
+      "SetpointTrackingSamples": 64992,
+      "SetpointTrackingDurationSeconds": 64.844948,
+      "SetpointTrackingAxes": [
+        {
+          "Axis": "Roll",
+          "MeanAbsoluteErrorDps": 2.8616906696208764,
+          "Percentile95AbsoluteErrorDps": 7
+        },
+        {
+          "Axis": "Pitch",
+          "MeanAbsoluteErrorDps": 5.255939192516002,
+          "Percentile95AbsoluteErrorDps": 11
+        },
+        {
+          "Axis": "Yaw",
+          "MeanAbsoluteErrorDps": 1.888447808961103,
+          "Percentile95AbsoluteErrorDps": 5
+        }
+      ],
+      "PidActivityAvailable": true,
+      "PidActivityReason": "",
+      "PidActivitySamples": 64992,
+      "PidActivityDurationSeconds": 64.844948,
+      "PidActivityAxes": [
+        {
+          "Axis": "Roll",
+          "Terms": [
+            {
+              "Term": "P",
+              "MeanAbsolute": 4.177498769079271,
+              "RootMeanSquare": 14.779260631219497,
+              "PeakAbsolute": 654
+            },
+            {
+              "Term": "I",
+              "MeanAbsolute": 4.928714303298867,
+              "RootMeanSquare": 7.967569707002436,
+              "PeakAbsolute": 139
+            },
+            {
+              "Term": "D",
+              "MeanAbsolute": 5.231028434268833,
+              "RootMeanSquare": 16.49442774401885,
+              "PeakAbsolute": 1242
+            },
+            {
+              "Term": "F",
+              "MeanAbsolute": 0.5627769571639586,
+              "RootMeanSquare": 1.6477197289795193,
+              "PeakAbsolute": 28
+            }
+          ],
+          "MissingTerms": []
+        },
+        {
+          "Axis": "Pitch",
+          "Terms": [
+            {
+              "Term": "P",
+              "MeanAbsolute": 8.04603643525357,
+              "RootMeanSquare": 41.05177930907699,
+              "PeakAbsolute": 1773
+            },
+            {
+              "Term": "I",
+              "MeanAbsolute": 65.31117676021664,
+              "RootMeanSquare": 71.3429602525522,
+              "PeakAbsolute": 400
+            },
+            {
+              "Term": "D",
+              "MeanAbsolute": 6.779403618906942,
+              "RootMeanSquare": 49.651844096976184,
+              "PeakAbsolute": 3861
+            },
+            {
+              "Term": "F",
+              "MeanAbsolute": 0.6327240275726244,
+              "RootMeanSquare": 1.7228230185154072,
+              "PeakAbsolute": 36
+            }
+          ],
+          "MissingTerms": []
+        },
+        {
+          "Axis": "Yaw",
+          "Terms": [
+            {
+              "Term": "P",
+              "MeanAbsolute": 2.469226981782373,
+              "RootMeanSquare": 5.424479272850568,
+              "PeakAbsolute": 233
+            },
+            {
+              "Term": "I",
+              "MeanAbsolute": 8.672898202855736,
+              "RootMeanSquare": 13.503605090609376,
+              "PeakAbsolute": 120
+            },
+            {
+              "Term": "F",
+              "MeanAbsolute": 0.8330102166420482,
+              "RootMeanSquare": 2.431322181037698,
+              "PeakAbsolute": 30
+            }
+          ],
+          "MissingTerms": [
+            "D"
+          ]
+        }
+      ]
+    }
+  ],
+  "UserHardwareChecks": [
+    {
+      "Step": "Propeller-Sichtpr\u00FCfung",
+      "Result": "Keine grobe sichtbare Auff\u00E4lligkeit; feine Abnutzung nicht ausgeschlossen",
+      "RecordedAtUtc": "2026-10-04T19:53:09.3491148Z"
+    },
+    {
+      "Step": "Mechanische Motorpr\u00FCfung",
+      "Result": "Kein auff\u00E4lliger Widerstand bemerkt; Motorfehler nicht sicher ausgeschlossen",
+      "RecordedAtUtc": "2026-10-04T19:53:15.7269595Z"
+    },
+    {
+      "Step": "Kabel-/L\u00F6tstellenpr\u00FCfung",
+      "Result": "Keine sichtbare Auff\u00E4lligkeit gemeldet",
+      "RecordedAtUtc": "2026-10-04T19:53:20.6432614Z"
+    }
+  ],
+  "ShortLogSessionNumbers": [],
+  "ShortLogRecoveryContext": ""
+}

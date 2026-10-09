@@ -1,5 +1,7 @@
 # FPV Blackbox Tuning Assistant
 
+Projektbezogene Fluglogs und Auswertungen liegen im privaten Repository unter [`flight-data/`](flight-data/README.md). Dort sind auch Sicherung und Verwendung auf weiteren Geräten beschrieben.
+
 ## Aktueller Stand
 
 ### Beta 0.2.0-beta.18

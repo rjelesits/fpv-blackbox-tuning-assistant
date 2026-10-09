@@ -25,4 +25,6 @@ Der GitHub-Zugang für die Projektübertragung gehört zur Entwicklungsumgebung 
 
 ## Umfang der Prüfung
 
-Geprüft wurden sämtliche für den neuen Commit vorgesehenen Textdateien, die lokale Git-Dateiliste sowie der entpackte Decoder-Quellcode auf typische Secret-Muster. Keine entsprechenden Secret-Treffer. Persönliche Flugberichte, Logs, CSVs, CLI-Exporte, lokale Toolzustände und Releasepakete sind nicht Bestandteil des neuen Commits. Der Decoder wird mit Binary, Lizenz und dem vom Projekt referenzierten Quellcodearchiv übernommen. Seine Binary wurde nicht unabhängig aus dem Quellcode reproduziert.
+Für den ersten Quellcode-Import wurden sämtliche vorgesehenen Textdateien, die lokale Git-Dateiliste sowie der entpackte Decoder-Quellcode auf typische Secret-Muster geprüft. Keine entsprechenden Secret-Treffer. Der Decoder wird mit Binary, Lizenz und dem vom Projekt referenzierten Quellcodearchiv übernommen. Seine Binary wurde nicht unabhängig aus dem Quellcode reproduziert.
+
+Auf ausdrücklichen Wunsch des Nutzers werden seit dem 10.10.2026 auch persönliche Fluglogs und Auswertungen unter `flight-data/` für das private Repository versioniert. Diese Sicherungen sind für berechtigte Repository-Nutzer und auf geklonten Geräten verfügbar; sie sind nicht zusätzlich durch die App verschlüsselt. Lokale Toolzustände, Releasepakete und Anmeldedaten bleiben ausgeschlossen. Umfang und Prüfsummen des ersten Datenbestands stehen in `flight-data/README.md` und `flight-data/manifest.json`.

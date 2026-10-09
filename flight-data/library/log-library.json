@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "Drones": [
+    {
+      "Id": "9f761d5e7d204e6c998eadadcb538048",
+      "Name": "DS16 Logflug mit acro-angle-horizon"
+    },
+    {
+      "Id": "ef2698a85be04963a67f0308b0a222d5",
+      "Name": "BEFH BETAFPVG473_V3"
+    }
+  ],
+  "Logs": [
+    {
+      "Id": "e17dc97c5a2c456193e16035751644e4",
+      "DroneId": "9f761d5e7d204e6c998eadadcb538048",
+      "OriginalFileName": "aBTFL_BLACKBOX_LOG_20261004_160250_BETAFPVG473_V3.BBL",
+      "RelativePath": "Logs\\DS16 Logflug mit acro-angle-horizon--9f761d5e\\erster versuch mit ds16.BBL",
+      "Sha256": "7DB63A1855D2CBBD04A5C8B2465C16607C273314A30D0C1B16A8BD540F00F471",
+      "ImportedUtc": "2026-10-04T19:50:36.0063194Z"
+    },
+    {
+      "Id": "20c81469c58840e4aed86e138c212c13",
+      "DroneId": "ef2698a85be04963a67f0308b0a222d5",
+      "OriginalFileName": "3BTFL_BLACKBOX_LOG_20260929_232201_BETAFPVG473_V3.BBL",
+      "RelativePath": "Logs\\BEFH BETAFPVG473_V3--ef2698a8\\3BTFL_BLACKBOX_LOG_20260929_232201_BETAFPVG473_V3.BBL",
+      "Sha256": "C5EC90D9CD3E91CF9AB2472D6342EEE6ECC92F071FC5AFC095360CDE4FEFDAC6",
+      "ImportedUtc": "2026-10-05T20:02:17.6392085Z"
+    },
+    {
+      "Id": "b4ad77512cc3493f91520f0257ea185c",
+      "DroneId": "ef2698a85be04963a67f0308b0a222d5",
+      "OriginalFileName": "BTFL_BLACKBOX_LOG_20260924_214421_BETAFPVG473_V3.BBL",
+      "RelativePath": "Logs\\BEFH BETAFPVG473_V3--ef2698a8\\BTFL_BLACKBOX_LOG_20260924_214421_BETAFPVG473_V3.BBL",
+      "Sha256": "F220E3D0B50FE8929DF62FFE924914B17FD0FD837FEBA800FB36927C48F44FB1",
+      "ImportedUtc": "2026-10-06T13:50:26.9587382Z"
+    }
+  ]
+}

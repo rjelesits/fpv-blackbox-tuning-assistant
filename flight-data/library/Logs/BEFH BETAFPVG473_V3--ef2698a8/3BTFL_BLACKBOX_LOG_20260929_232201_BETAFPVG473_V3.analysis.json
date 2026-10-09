@@ -1,0 +1,2864 @@
+{
+  "Version": 5,
+  "DroneName": "BEFH BETAFPVG473_V3",
+  "OriginalFileName": "3BTFL_BLACKBOX_LOG_20260929_232201_BETAFPVG473_V3.BBL",
+  "StoredBlackboxFileName": "3BTFL_BLACKBOX_LOG_20260929_232201_BETAFPVG473_V3.BBL",
+  "Sha256": "C5EC90D9CD3E91CF9AB2472D6342EEE6ECC92F071FC5AFC095360CDE4FEFDAC6",
+  "AnalyzedAtUtc": "2026-10-06T13:56:24.5385901Z",
+  "DecoderVersion": "1.1.1",
+  "DataQualityStatus": "I-/P-Flug-Frames dekodiert",
+  "HardwareCheckStatus": "Keine groben Auff\u00E4lligkeiten gemeldet",
+  "SessionCount": 11,
+  "FlightFrameCount": 365859,
+  "IFrameCount": 11439,
+  "PFrameCount": 354420,
+  "Sessions": [
+    {
+      "LogNumber": 1,
+      "TotalFrames": 53685,
+      "IFrames": 1678,
+      "PFrames": 51994,
+      "EventFrameCount": 5,
+      "LoopTimeMicroseconds": 125,
+      "Board": "BEFH BETAFPVG473_V3",
+      "FlightModeChangeCount": 1,
+      "FlightModeAvailable": true,
+      "FlightModeReason": "",
+      "FlightModeDurationSeconds": 52.233009,
+      "FlightModeTransitionCount": 0,
+      "FlightModeBoundaryEventCount": 1,
+      "FlightModes": [
+        {
+          "Mode": "Horizon (Selbstaufrichtung nahe Stick-Mitte)",
+          "Samples": 52355,
+          "DurationSeconds": 52.233009
+        }
+      ],
+      "FlightModeTransitions": [],
+      "Firmware": "Betaflight 2026.6.2 (e0b7bb01b) STM32G474",
+      "MotorAssessmentAvailable": true,
+      "MotorAssessmentReason": "",
+      "MotorAssessmentSamples": 44926,
+      "MotorAssessmentDurationSeconds": 52.233009,
+      "MotorOutputBiasPercent": [
+        4.20555067906267,
+        -7.428188695092086,
+        4.258712518152617,
+        -4.205550679062655
+      ],
+      "ErpmBiasPercent": [
+        3.466508219563339,
+        -6.2605159849310175,
+        4.008876319235003,
+        -3.4665082195633503
+      ],
+      "StrongOutputDeviation": false,
+      "StrongErpmDeviation": false,
+      "SetpointTrackingAvailable": true,
+      "SetpointTrackingReason": "",
+      "SetpointTrackingSamples": 52355,
+      "SetpointTrackingDurationSeconds": 52.233009,
+      "SetpointTrackingAxes": [
+        {
+          "Axis": "Roll",
+          "MeanAbsoluteErrorDps": 2.897984910705759,
+          "Percentile95AbsoluteErrorDps": 6
+        },
+        {
+          "Axis": "Pitch",
+          "MeanAbsoluteErrorDps": 3.535421640721994,
+          "Percentile95AbsoluteErrorDps": 5
+        },
+        {
+          "Axis": "Yaw",
+          "MeanAbsoluteErrorDps": 1.9468436634514372,
+          "Percentile95AbsoluteErrorDps": 4
+        }
+      ],
+      "SetpointTrackingByMode": [
+        {
+          "Mode": "Horizon (Selbstaufrichtung nahe Stick-Mitte)",
+          "Assessment": {
+            "IsAvailable": true,
+            "Reason": "",
+            "Samples": 52355,
+            "DurationSeconds": 52.233009,
+            "Axes": [
+              {
+                "Axis": "Roll",
+                "MeanAbsoluteErrorDps": 2.897984910705759,
+                "Percentile95AbsoluteErrorDps": 6
+              },
+              {
+                "Axis": "Pitch",
+                "MeanAbsoluteErrorDps": 3.535421640721994,
+                "Percentile95AbsoluteErrorDps": 5
+              },
+              {
+                "Axis": "Yaw",
+                "MeanAbsoluteErrorDps": 1.9468436634514372,
+                "Percentile95AbsoluteErrorDps": 4
+              }
+            ]
+          }
+        }
+      ],
+      "PidActivityAvailable": true,
+      "PidActivityReason": "",
+      "PidActivitySamples": 52355,
+      "PidActivityDurationSeconds": 52.233009,
+      "PidActivityAxes": [
+        {
+          "Axis": "Roll",
+          "Terms": [
+            {
+              "Term": "P",
+              "MeanAbsolute": 4.179600802215643,
+              "RootMeanSquare": 21.256646030771396,
+              "PeakAbsolute": 795
+            },
+            {
+              "Term": "I",
+              "MeanAbsolute": 5.284385445516188,
+              "RootMeanSquare": 11.605514086638545,
+              "PeakAbsolute": 190
+            },
+            {
+              "Term": "D",
+              "MeanAbsolute": 7.213121955878139,
+              "RootMeanSquare": 28.393043047821124,
+              "PeakAbsolute": 1231
+            },
+            {
+              "Term": "F",
+              "MeanAbsolute": 0.43250883392226147,
+              "RootMeanSquare": 1.9776518567695118,
+              "PeakAbsolute": 77
+            }
+          ],
+          "MissingTerms": []
+        },
+        {
+          "Axis": "Pitch",
+          "Terms": [
+            {
+              "Term": "P",
+              "MeanAbsolute": 5.330169038296247,
+              "RootMeanSquare": 38.76056964421838,
+              "PeakAbsolute": 1668
+            },
+            {
+              "Term": "I",
+              "MeanAbsolute": 20.77494031133607,
+              "RootMeanSquare": 27.068836651718055,
+              "PeakAbsolute": 400
+            },
+            {
+              "Term": "D",
+              "MeanAbsolute": 6.120981759144303,
+              "RootMeanSquare": 52.27553887310304,
+              "PeakAbsolute": 2652
+            },
+            {
+              "Term": "F",
+              "MeanAbsolute": 0.14373030274090345,
+              "RootMeanSquare": 0.4684486942681062,
+              "PeakAbsolute": 7
+            }
+          ],
+          "MissingTerms": []
+        },
+        {
+          "Axis": "Yaw",
+          "Terms": [
+            {
+              "Term": "P",
+              "MeanAbsolute": 2.471989303791424,
+              "RootMeanSquare": 10.087305829502172,
+              "PeakAbsolute": 486
+            },
+            {
+              "Term": "I",
+              "MeanAbsolute": 7.12086715690956,
+              "RootMeanSquare": 12.571422540546536,
+              "PeakAbsolute": 301
+            },
+            {
+              "Term": "F",
+              "MeanAbsolute": 1.283774233597555,
+              "RootMeanSquare": 4.366274058600595,
+              "PeakAbsolute": 96
+            }
+          ],
+          "MissingTerms": [
+            "D"
+          ]
+        }
+      ],
+      "PidActivityByMode": [
+        {
+          "Mode": "Horizon (Selbstaufrichtung nahe Stick-Mitte)",
+          "Assessment": {
+            "IsAvailable": true,
+            "Reason": "",
+            "Samples": 52355,
+            "DurationSeconds": 52.233009,
+            "Axes": [
+              {
+                "Axis": "Roll",
+                "Terms": [
+                  {
+                    "Term": "P",
+                    "MeanAbsolute": 4.179600802215643,
+                    "RootMeanSquare": 21.256646030771396,
+                    "PeakAbsolute": 795
+                  },
+                  {
+                    "Term": "I",
+                    "MeanAbsolute": 5.284385445516188,
+                    "RootMeanSquare": 11.605514086638545,
+                    "PeakAbsolute": 190
+                  },
+                  {
+                    "Term": "D",
+                    "MeanAbsolute": 7.213121955878139,
+                    "RootMeanSquare": 28.393043047821124,
+                    "PeakAbsolute": 1231
+                  },
+                  {
+                    "Term": "F",
+                    "MeanAbsolute": 0.43250883392226147,
+                    "RootMeanSquare": 1.9776518567695118,
+                    "PeakAbsolute": 77
+                  }
+                ],
+                "MissingTerms": []
+              },
+              {
+                "Axis": "Pitch",
+                "Terms": [
+                  {
+                    "Term": "P",
+                    "MeanAbsolute": 5.330169038296247,
+                    "RootMeanSquare": 38.76056964421838,
+                    "PeakAbsolute": 1668
+                  },
+                  {
+                    "Term": "I",
+                    "MeanAbsolute": 20.77494031133607,
+                    "RootMeanSquare": 27.068836651718055,
+                    "PeakAbsolute": 400
+                  },
+                  {
+                    "Term": "D",
+                    "MeanAbsolute": 6.120981759144303,
+                    "RootMeanSquare": 52.27553887310304,
+                    "PeakAbsolute": 2652
+                  },
+                  {
+                    "Term": "F",
+                    "MeanAbsolute": 0.14373030274090345,
+                    "RootMeanSquare": 0.4684486942681062,
+                    "PeakAbsolute": 7
+                  }
+                ],
+                "MissingTerms": []
+              },
+              {
+                "Axis": "Yaw",
+                "Terms": [
+                  {
+                    "Term": "P",
+                    "MeanAbsolute": 2.471989303791424,
+                    "RootMeanSquare": 10.087305829502172,
+                    "PeakAbsolute": 486
+                  },
+                  {
+                    "Term": "I",
+                    "MeanAbsolute": 7.12086715690956,
+                    "RootMeanSquare": 12.571422540546536,
+                    "PeakAbsolute": 301
+                  },
+                  {
+                    "Term": "F",
+                    "MeanAbsolute": 1.283774233597555,
+                    "RootMeanSquare": 4.366274058600595,
+                    "PeakAbsolute": 96
+                  }
+                ],
+                "MissingTerms": [
+                  "D"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "TuningManeuverByMode": [
+        {
+          "Mode": "Horizon (Selbstaufrichtung nahe Stick-Mitte)",
+          "Assessment": {
+            "IsAvailable": true,
+            "Reason": "",
+            "Samples": 52355,
+            "DurationSeconds": 52.233009,
+            "SampleRateHz": 1002.3355154591993,
+            "Axes": [
+              {
+                "Axis": "Roll",
+                "HighStickExcursionCount": 0,
+                "TotalHighStickDurationSeconds": 0,
+                "PeakStickCommand": 0,
+                "PeakSetpointDps": 70,
+                "PeakSetpointAtHighStickDps": 0,
+                "NearFullStickExcursionCount": 0,
+                "PeakSetpointAtNearFullStickDps": 0
+              },
+              {
+                "Axis": "Pitch",
+                "HighStickExcursionCount": 0,
+                "TotalHighStickDurationSeconds": 0,
+                "PeakStickCommand": 0,
+                "PeakSetpointDps": 81,
+                "PeakSetpointAtHighStickDps": 0,
+                "NearFullStickExcursionCount": 0,
+                "PeakSetpointAtNearFullStickDps": 0
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "LogNumber": 2,
+      "TotalFrames": 47988,
+      "IFrames": 1500,
+      "PFrames": 46476,
+      "EventFrameCount": 5,
+      "LoopTimeMicroseconds": 125,
+      "Board": "BEFH BETAFPVG473_V3",
+      "FlightModeChangeCount": 1,
+      "FlightModeAvailable": true,
+      "FlightModeReason": "",
+      "FlightModeDurationSeconds": 42.993295,
+      "FlightModeTransitionCount": 0,
+      "FlightModeBoundaryEventCount": 1,
+      "FlightModes": [
+        {
+          "Mode": "Horizon (Selbstaufrichtung nahe Stick-Mitte)",
+          "Samples": 43094,
+          "DurationSeconds": 42.993295
+        }
+      ],
+      "FlightModeTransitions": [],
+      "Firmware": "Betaflight 2026.6.2 (e0b7bb01b) STM32G474",
+      "MotorAssessmentAvailable": true,
+      "MotorAssessmentReason": "",
+      "MotorAssessmentSamples": 38473,
+      "MotorAssessmentDurationSeconds": 44.767295,
+      "MotorOutputBiasPercent": [
+        2.373338224676073,
+        -7.746414466620412,
+        5.251904548427983,
+        -2.3733382246760875
+      ],
+      "ErpmBiasPercent": [
+        2.262613524712641,
+        -8.230963115227333,
+        3.74500106419442,
+        -2.2626135247126524
+      ],
+      "StrongOutputDeviation": false,
+      "StrongErpmDeviation": false,
+      "SetpointTrackingAvailable": true,
+      "SetpointTrackingReason": "",
+      "SetpointTrackingSamples": 43094,
+      "SetpointTrackingDurationSeconds": 44.767295,
+      "SetpointTrackingAxes": [
+        {
+          "Axis": "Roll",
+          "MeanAbsoluteErrorDps": 11.485334385297257,
+          "Percentile95AbsoluteErrorDps": 45
+        },
+        {
+          "Axis": "Pitch",
+          "MeanAbsoluteErrorDps": 11.191465169165081,
+          "Percentile95AbsoluteErrorDps": 55
+        },
+        {
+          "Axis": "Yaw",
+          "MeanAbsoluteErrorDps": 3.6559381816494176,
+          "Percentile95AbsoluteErrorDps": 14
+        }
+      ],
+      "SetpointTrackingByMode": [
+        {
+          "Mode": "Horizon (Selbstaufrichtung nahe Stick-Mitte)",
+          "Assessment": {
+            "IsAvailable": true,
+            "Reason": "",
+            "Samples": 43094,
+            "DurationSeconds": 44.767295,
+            "Axes": [
+              {
+                "Axis": "Roll",
+                "MeanAbsoluteErrorDps": 11.485334385297257,
+                "Percentile95AbsoluteErrorDps": 45
+              },
+              {
+                "Axis": "Pitch",
+                "MeanAbsoluteErrorDps": 11.191465169165081,
+                "Percentile95AbsoluteErrorDps": 55
+              },
+              {
+                "Axis": "Yaw",
+                "MeanAbsoluteErrorDps": 3.6559381816494176,
+                "Percentile95AbsoluteErrorDps": 14
+              }
+            ]
+          }
+        }
+      ],
+      "PidActivityAvailable": true,
+      "PidActivityReason": "",
+      "PidActivitySamples": 43094,
+      "PidActivityDurationSeconds": 44.767295,
+      "PidActivityAxes": [
+        {
+          "Axis": "Roll",
+          "Terms": [
+            {
+              "Term": "P",
+              "MeanAbsolute": 16.634078990114634,
+              "RootMeanSquare": 70.10357270774922,
+              "PeakAbsolute": 1380
+            },
+            {
+              "Term": "I",
+              "MeanAbsolute": 13.825497749106605,
+              "RootMeanSquare": 33.164696022066025,
+              "PeakAbsolute": 372
+            },
+            {
+              "Term": "D",
+              "MeanAbsolute": 15.972037870701257,
+              "RootMeanSquare": 78.99882284712388,
+              "PeakAbsolute": 2629
+            },
+            {
+              "Term": "F",
+              "MeanAbsolute": 0.3788926532695967,
+              "RootMeanSquare": 0.9909086902874156,
+              "PeakAbsolute": 16
+            }
+          ],
+          "MissingTerms": []
+        },
+        {
+          "Axis": "Pitch",
+          "Terms": [
+            {
+              "Term": "P",
+              "MeanAbsolute": 16.949459321483268,
+              "RootMeanSquare": 60.53828941322285,
+              "PeakAbsolute": 1395
+            },
+            {
+              "Term": "I",
+              "MeanAbsolute": 26.497656286257946,
+              "RootMeanSquare": 36.93972052703178,
+              "PeakAbsolute": 347
+            },
+            {
+              "Term": "D",
+              "MeanAbsolute": 17.386573536919293,
+              "RootMeanSquare": 96.47359639368902,
+              "PeakAbsolute": 3345
+            },
+            {
+              "Term": "F",
+              "MeanAbsolute": 0.22963753654801133,
+              "RootMeanSquare": 0.7008603799585659,
+              "PeakAbsolute": 9
+            }
+          ],
+          "MissingTerms": []
+        },
+        {
+          "Axis": "Yaw",
+          "Terms": [
+            {
+              "Term": "P",
+              "MeanAbsolute": 4.928064231679584,
+              "RootMeanSquare": 15.634981241381178,
+              "PeakAbsolute": 352
+            },
+            {
+              "Term": "I",
+              "MeanAbsolute": 15.968255441592797,
+              "RootMeanSquare": 36.76874607324495,
+              "PeakAbsolute": 320
+            },
+            {
+              "Term": "F",
+              "MeanAbsolute": 0.9313129437972804,
+              "RootMeanSquare": 1.9656279713048677,
+              "PeakAbsolute": 17
+            }
+          ],
+          "MissingTerms": [
+            "D"
+          ]
+        }
+      ],
+      "PidActivityByMode": [
+        {
+          "Mode": "Horizon (Selbstaufrichtung nahe Stick-Mitte)",
+          "Assessment": {
+            "IsAvailable": true,
+            "Reason": "",
+            "Samples": 43094,
+            "DurationSeconds": 44.767295,
+            "Axes": [
+              {
+                "Axis": "Roll",
+                "Terms": [
+                  {
+                    "Term": "P",
+                    "MeanAbsolute": 16.634078990114634,
+                    "RootMeanSquare": 70.10357270774922,
+                    "PeakAbsolute": 1380
+                  },
+                  {
+                    "Term": "I",
+                    "MeanAbsolute": 13.825497749106605,
+                    "RootMeanSquare": 33.164696022066025,
+                    "PeakAbsolute": 372
+                  },
+                  {
+                    "Term": "D",
+                    "MeanAbsolute": 15.972037870701257,
+                    "RootMeanSquare": 78.99882284712388,
+                    "PeakAbsolute": 2629
+                  },
+                  {
+                    "Term": "F",
+                    "MeanAbsolute": 0.3788926532695967,
+                    "RootMeanSquare": 0.9909086902874156,
+                    "PeakAbsolute": 16
+                  }
+                ],
+                "MissingTerms": []
+              },
+              {
+                "Axis": "Pitch",
+                "Terms": [
+                  {
+                    "Term": "P",
+                    "MeanAbsolute": 16.949459321483268,
+                    "RootMeanSquare": 60.53828941322285,
+                    "PeakAbsolute": 1395
+                  },
+                  {
+                    "Term": "I",
+                    "MeanAbsolute": 26.497656286257946,
+                    "RootMeanSquare": 36.93972052703178,
+                    "PeakAbsolute": 347
+                  },
+                  {
+                    "Term": "D",
+                    "MeanAbsolute": 17.386573536919293,
+                    "RootMeanSquare": 96.47359639368902,
+                    "PeakAbsolute": 3345
+                  },
+                  {
+                    "Term": "F",
+                    "MeanAbsolute": 0.22963753654801133,
+                    "RootMeanSquare": 0.7008603799585659,
+                    "PeakAbsolute": 9
+                  }
+                ],
+                "MissingTerms": []
+              },
+              {
+                "Axis": "Yaw",
+                "Terms": [
+                  {
+                    "Term": "P",
+                    "MeanAbsolute": 4.928064231679584,
+                    "RootMeanSquare": 15.634981241381178,
+                    "PeakAbsolute": 352
+                  },
+                  {
+                    "Term": "I",
+                    "MeanAbsolute": 15.968255441592797,
+                    "RootMeanSquare": 36.76874607324495,
+                    "PeakAbsolute": 320
+                  },
+                  {
+                    "Term": "F",
+                    "MeanAbsolute": 0.9313129437972804,
+                    "RootMeanSquare": 1.9656279713048677,
+                    "PeakAbsolute": 17
+                  }
+                ],
+                "MissingTerms": [
+                  "D"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "TuningManeuverByMode": [
+        {
+          "Mode": "Horizon (Selbstaufrichtung nahe Stick-Mitte)",
+          "Assessment": {
+            "IsAvailable": true,
+            "Reason": "",
+            "Samples": 43094,
+            "DurationSeconds": 44.767295,
+            "SampleRateHz": 962.6223786806864,
+            "Axes": [
+              {
+                "Axis": "Roll",
+                "HighStickExcursionCount": 0,
+                "TotalHighStickDurationSeconds": 0,
+                "PeakStickCommand": 0,
+                "PeakSetpointDps": 71,
+                "PeakSetpointAtHighStickDps": 0,
+                "NearFullStickExcursionCount": 0,
+                "PeakSetpointAtNearFullStickDps": 0
+              },
+              {
+                "Axis": "Pitch",
+                "HighStickExcursionCount": 0,
+                "TotalHighStickDurationSeconds": 0,
+                "PeakStickCommand": 0,
+                "PeakSetpointDps": 57,
+                "PeakSetpointAtHighStickDps": 0,
+                "NearFullStickExcursionCount": 0,
+                "PeakSetpointAtNearFullStickDps": 0
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "LogNumber": 3,
+      "TotalFrames": 15469,
+      "IFrames": 484,
+      "PFrames": 14979,
+      "EventFrameCount": 4,
+      "LoopTimeMicroseconds": 125,
+      "Board": "BEFH BETAFPVG473_V3",
+      "FlightModeChangeCount": 0,
+      "FlightModeAvailable": true,
+      "FlightModeReason": "",
+      "FlightModeDurationSeconds": 10.783581,
+      "FlightModeTransitionCount": 0,
+      "FlightModeBoundaryEventCount": 0,
+      "FlightModes": [
+        {
+          "Mode": "Horizon (Selbstaufrichtung nahe Stick-Mitte)",
+          "Samples": 10809,
+          "DurationSeconds": 10.783581
+        }
+      ],
+      "FlightModeTransitions": [],
+      "Firmware": "Betaflight 2026.6.2 (e0b7bb01b) STM32G474",
+      "MotorAssessmentAvailable": true,
+      "MotorAssessmentReason": "",
+      "MotorAssessmentSamples": 10644,
+      "MotorAssessmentDurationSeconds": 10.720725,
+      "MotorOutputBiasPercent": [
+        1.418644871623352,
+        -8.296285605604306,
+        1.1376741877293028,
+        -1.1376741877293028
+      ],
+      "ErpmBiasPercent": [
+        0.11459889643838772,
+        -8.771083220132239,
+        0.7330717921421371,
+        -0.1145988964383993
+      ],
+      "StrongOutputDeviation": false,
+      "StrongErpmDeviation": false,
+      "SetpointTrackingAvailable": true,
+      "SetpointTrackingReason": "",
+      "SetpointTrackingSamples": 10809,
+      "SetpointTrackingDurationSeconds": 10.783581,
+      "SetpointTrackingAxes": [
+        {
+          "Axis": "Roll",
+          "MeanAbsoluteErrorDps": 12.161994634101212,
+          "Percentile95AbsoluteErrorDps": 14
+        },
+        {
+          "Axis": "Pitch",
+          "MeanAbsoluteErrorDps": 6.995189194190027,
+          "Percentile95AbsoluteErrorDps": 16
+        },
+        {
+          "Axis": "Yaw",
+          "MeanAbsoluteErrorDps": 6.307891571838283,
+          "Percentile95AbsoluteErrorDps": 6
+        }
+      ],
+      "SetpointTrackingByMode": [
+        {
+          "Mode": "Horizon (Selbstaufrichtung nahe Stick-Mitte)",
+          "Assessment": {
+            "IsAvailable": true,
+            "Reason": "",
+            "Samples": 10809,
+            "DurationSeconds": 10.783581,
+            "Axes": [
+              {
+                "Axis": "Roll",
+                "MeanAbsoluteErrorDps": 12.161994634101212,
+                "Percentile95AbsoluteErrorDps": 14
+              },
+              {
+                "Axis": "Pitch",
+                "MeanAbsoluteErrorDps": 6.995189194190027,
+                "Percentile95AbsoluteErrorDps": 16
+              },
+              {
+                "Axis": "Yaw",
+                "MeanAbsoluteErrorDps": 6.307891571838283,
+                "Percentile95AbsoluteErrorDps": 6
+              }
+            ]
+          }
+        }
+      ],
+      "PidActivityAvailable": true,
+      "PidActivityReason": "",
+      "PidActivitySamples": 10809,
+      "PidActivityDurationSeconds": 10.783581,
+      "PidActivityAxes": [
+        {
+          "Axis": "Roll",
+          "Terms": [
+            {
+              "Term": "P",
+              "MeanAbsolute": 18.46452030715145,
+              "RootMeanSquare": 107.65812081719055,
+              "PeakAbsolute": 1534
+            },
+            {
+              "Term": "I",
+              "MeanAbsolute": 14.81274863539643,
+              "RootMeanSquare": 47.68569518236514,
+              "PeakAbsolute": 400
+            },
+            {
+              "Term": "D",
+              "MeanAbsolute": 15.060597650106393,
+              "RootMeanSquare": 82.03707679293407,
+              "PeakAbsolute": 2372
+            },
+            {
+              "Term": "F",
+              "MeanAbsolute": 0.09482838375427884,
+              "RootMeanSquare": 0.3341649354573052,
+              "PeakAbsolute": 3
+            }
+          ],
+          "MissingTerms": []
+        },
+        {
+          "Axis": "Pitch",
+          "Terms": [
+            {
+              "Term": "P",
+              "MeanAbsolute": 11.248404107688037,
+              "RootMeanSquare": 57.80931517570747,
+              "PeakAbsolute": 872
+            },
+            {
+              "Term": "I",
+              "MeanAbsolute": 13.461189749283005,
+              "RootMeanSquare": 32.51453698242977,
+              "PeakAbsolute": 400
+            },
+            {
+              "Term": "D",
+              "MeanAbsolute": 13.070404292719031,
+              "RootMeanSquare": 69.38897508972316,
+              "PeakAbsolute": 2135
+            },
+            {
+              "Term": "F",
+              "MeanAbsolute": 0.29456934036451105,
+              "RootMeanSquare": 0.973418570591307,
+              "PeakAbsolute": 13
+            }
+          ],
+          "MissingTerms": []
+        },
+        {
+          "Axis": "Yaw",
+          "Terms": [
+            {
+              "Term": "P",
+              "MeanAbsolute": 8.716717550189657,
+              "RootMeanSquare": 57.000111992332926,
+              "PeakAbsolute": 709
+            },
+            {
+              "Term": "I",
+              "MeanAbsolute": 10.889166435377925,
+              "RootMeanSquare": 35.37639356894193,
+              "PeakAbsolute": 320
+            },
+            {
+              "Term": "F",
+              "MeanAbsolute": 0.10250716995096679,
+              "RootMeanSquare": 0.36270792078957564,
+              "PeakAbsolute": 3
+            }
+          ],
+          "MissingTerms": [
+            "D"
+          ]
+        }
+      ],
+      "PidActivityByMode": [
+        {
+          "Mode": "Horizon (Selbstaufrichtung nahe Stick-Mitte)",
+          "Assessment": {
+            "IsAvailable": true,
+            "Reason": "",
+            "Samples": 10809,
+            "DurationSeconds": 10.783581,
+            "Axes": [
+              {
+                "Axis": "Roll",
+                "Terms": [
+                  {
+                    "Term": "P",
+                    "MeanAbsolute": 18.46452030715145,
+                    "RootMeanSquare": 107.65812081719055,
+                    "PeakAbsolute": 1534
+                  },
+                  {
+                    "Term": "I",
+                    "MeanAbsolute": 14.81274863539643,
+                    "RootMeanSquare": 47.68569518236514,
+                    "PeakAbsolute": 400
+                  },
+                  {
+                    "Term": "D",
+                    "MeanAbsolute": 15.060597650106393,
+                    "RootMeanSquare": 82.03707679293407,
+                    "PeakAbsolute": 2372
+                  },
+                  {
+                    "Term": "F",
+                    "MeanAbsolute": 0.09482838375427884,
+                    "RootMeanSquare": 0.3341649354573052,
+                    "PeakAbsolute": 3
+                  }
+                ],
+                "MissingTerms": []
+              },
+              {
+                "Axis": "Pitch",
+                "Terms": [
+                  {
+                    "Term": "P",
+                    "MeanAbsolute": 11.248404107688037,
+                    "RootMeanSquare": 57.80931517570747,
+                    "PeakAbsolute": 872
+                  },
+                  {
+                    "Term": "I",
+                    "MeanAbsolute": 13.461189749283005,
+                    "RootMeanSquare": 32.51453698242977,
+                    "PeakAbsolute": 400
+                  },
+                  {
+                    "Term": "D",
+                    "MeanAbsolute": 13.070404292719031,
+                    "RootMeanSquare": 69.38897508972316,
+                    "PeakAbsolute": 2135
+                  },
+                  {
+                    "Term": "F",
+                    "MeanAbsolute": 0.29456934036451105,
+                    "RootMeanSquare": 0.973418570591307,
+                    "PeakAbsolute": 13
+                  }
+                ],
+                "MissingTerms": []
+              },
+              {
+                "Axis": "Yaw",
+                "Terms": [
+                  {
+                    "Term": "P",
+                    "MeanAbsolute": 8.716717550189657,
+                    "RootMeanSquare": 57.000111992332926,
+                    "PeakAbsolute": 709
+                  },
+                  {
+                    "Term": "I",
+                    "MeanAbsolute": 10.889166435377925,
+                    "RootMeanSquare": 35.37639356894193,
+                    "PeakAbsolute": 320
+                  },
+                  {
+                    "Term": "F",
+                    "MeanAbsolute": 0.10250716995096679,
+                    "RootMeanSquare": 0.36270792078957564,
+                    "PeakAbsolute": 3
+                  }
+                ],
+                "MissingTerms": [
+                  "D"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "TuningManeuverByMode": [
+        {
+          "Mode": "Horizon (Selbstaufrichtung nahe Stick-Mitte)",
+          "Assessment": {
+            "IsAvailable": true,
+            "Reason": "",
+            "Samples": 10809,
+            "DurationSeconds": 10.783581,
+            "SampleRateHz": 1002.3571947018343,
+            "Axes": [
+              {
+                "Axis": "Roll",
+                "HighStickExcursionCount": 0,
+                "TotalHighStickDurationSeconds": 0,
+                "PeakStickCommand": 0,
+                "PeakSetpointDps": 96,
+                "PeakSetpointAtHighStickDps": 0,
+                "NearFullStickExcursionCount": 0,
+                "PeakSetpointAtNearFullStickDps": 0
+              },
+              {
+                "Axis": "Pitch",
+                "HighStickExcursionCount": 0,
+                "TotalHighStickDurationSeconds": 0,
+                "PeakStickCommand": 0,
+                "PeakSetpointDps": 68,
+                "PeakSetpointAtHighStickDps": 0,
+                "NearFullStickExcursionCount": 0,
+                "PeakSetpointAtNearFullStickDps": 0
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "LogNumber": 4,
+      "TotalFrames": 86926,
+      "IFrames": 2716,
+      "PFrames": 84193,
+      "EventFrameCount": 5,
+      "LoopTimeMicroseconds": 125,
+      "Board": "BEFH BETAFPVG473_V3",
+      "FlightModeChangeCount": 1,
+      "FlightModeAvailable": true,
+      "FlightModeReason": "",
+      "FlightModeDurationSeconds": 81.605002,
+      "FlightModeTransitionCount": 0,
+      "FlightModeBoundaryEventCount": 1,
+      "FlightModes": [
+        {
+          "Mode": "Horizon (Selbstaufrichtung nahe Stick-Mitte)",
+          "Samples": 81791,
+          "DurationSeconds": 81.605002
+        }
+      ],
+      "FlightModeTransitions": [],
+      "Firmware": "Betaflight 2026.6.2 (e0b7bb01b) STM32G474",
+      "MotorAssessmentAvailable": true,
+      "MotorAssessmentReason": "",
+      "MotorAssessmentSamples": 77104,
+      "MotorAssessmentDurationSeconds": 81.605002,
+      "MotorOutputBiasPercent": [
+        4.317038014164539,
+        -5.810773449209161,
+        5.017557650444447,
+        -4.317038014164539
+      ],
+      "ErpmBiasPercent": [
+        3.642125449364501,
+        -4.402450593977688,
+        4.855188954650389,
+        -3.642125449364501
+      ],
+      "StrongOutputDeviation": false,
+      "StrongErpmDeviation": false,
+      "SetpointTrackingAvailable": true,
+      "SetpointTrackingReason": "",
+      "SetpointTrackingSamples": 81791,
+      "SetpointTrackingDurationSeconds": 81.605002,
+      "SetpointTrackingAxes": [
+        {
+          "Axis": "Roll",
+          "MeanAbsoluteErrorDps": 3.4431172133853356,
+          "Percentile95AbsoluteErrorDps": 7
+        },
+        {
+          "Axis": "Pitch",
+          "MeanAbsoluteErrorDps": 6.209607414018658,
+          "Percentile95AbsoluteErrorDps": 9
+        },
+        {
+          "Axis": "Yaw",
+          "MeanAbsoluteErrorDps": 2.3485835849910135,
+          "Percentile95AbsoluteErrorDps": 6
+        }
+      ],
+      "SetpointTrackingByMode": [
+        {
+          "Mode": "Horizon (Selbstaufrichtung nahe Stick-Mitte)",
+          "Assessment": {
+            "IsAvailable": true,
+            "Reason": "",
+            "Samples": 81791,
+            "DurationSeconds": 81.605002,
+            "Axes": [
+              {
+                "Axis": "Roll",
+                "MeanAbsoluteErrorDps": 3.4431172133853356,
+                "Percentile95AbsoluteErrorDps": 7
+              },
+              {
+                "Axis": "Pitch",
+                "MeanAbsoluteErrorDps": 6.209607414018658,
+                "Percentile95AbsoluteErrorDps": 9
+              },
+              {
+                "Axis": "Yaw",
+                "MeanAbsoluteErrorDps": 2.3485835849910135,
+                "Percentile95AbsoluteErrorDps": 6
+              }
+            ]
+          }
+        }
+      ],
+      "PidActivityAvailable": true,
+      "PidActivityReason": "",
+      "PidActivitySamples": 81791,
+      "PidActivityDurationSeconds": 81.605002,
+      "PidActivityAxes": [
+        {
+          "Axis": "Roll",
+          "Terms": [
+            {
+              "Term": "P",
+              "MeanAbsolute": 5.02639654729738,
+              "RootMeanSquare": 23.50658052638511,
+              "PeakAbsolute": 964
+            },
+            {
+              "Term": "I",
+              "MeanAbsolute": 3.5643041410424128,
+              "RootMeanSquare": 8.50685564127072,
+              "PeakAbsolute": 179
+            },
+            {
+              "Term": "D",
+              "MeanAbsolute": 10.02780256996491,
+              "RootMeanSquare": 43.10763415463155,
+              "PeakAbsolute": 1979
+            },
+            {
+              "Term": "F",
+              "MeanAbsolute": 0.315902727683975,
+              "RootMeanSquare": 1.0178680227363035,
+              "PeakAbsolute": 18
+            }
+          ],
+          "MissingTerms": []
+        },
+        {
+          "Axis": "Pitch",
+          "Terms": [
+            {
+              "Term": "P",
+              "MeanAbsolute": 9.49337946717854,
+              "RootMeanSquare": 51.59973273179038,
+              "PeakAbsolute": 1808
+            },
+            {
+              "Term": "I",
+              "MeanAbsolute": 21.606778251885903,
+              "RootMeanSquare": 31.222546400775492,
+              "PeakAbsolute": 400
+            },
+            {
+              "Term": "D",
+              "MeanAbsolute": 11.291352349280483,
+              "RootMeanSquare": 78.49689175617507,
+              "PeakAbsolute": 4125
+            },
+            {
+              "Term": "F",
+              "MeanAbsolute": 0.17012874277120954,
+              "RootMeanSquare": 0.4960875648049717,
+              "PeakAbsolute": 6
+            }
+          ],
+          "MissingTerms": []
+        },
+        {
+          "Axis": "Yaw",
+          "Terms": [
+            {
+              "Term": "P",
+              "MeanAbsolute": 2.9330244158892786,
+              "RootMeanSquare": 9.30566404697359,
+              "PeakAbsolute": 333
+            },
+            {
+              "Term": "I",
+              "MeanAbsolute": 6.300033010966977,
+              "RootMeanSquare": 12.343981520025153,
+              "PeakAbsolute": 188
+            },
+            {
+              "Term": "F",
+              "MeanAbsolute": 0.6232226039539802,
+              "RootMeanSquare": 1.3226896431386934,
+              "PeakAbsolute": 10
+            }
+          ],
+          "MissingTerms": [
+            "D"
+          ]
+        }
+      ],
+      "PidActivityByMode": [
+        {
+          "Mode": "Horizon (Selbstaufrichtung nahe Stick-Mitte)",
+          "Assessment": {
+            "IsAvailable": true,
+            "Reason": "",
+            "Samples": 81791,
+            "DurationSeconds": 81.605002,
+            "Axes": [
+              {
+                "Axis": "Roll",
+                "Terms": [
+                  {
+                    "Term": "P",
+                    "MeanAbsolute": 5.02639654729738,
+                    "RootMeanSquare": 23.50658052638511,
+                    "PeakAbsolute": 964
+                  },
+                  {
+                    "Term": "I",
+                    "MeanAbsolute": 3.5643041410424128,
+                    "RootMeanSquare": 8.50685564127072,
+                    "PeakAbsolute": 179
+                  },
+                  {
+                    "Term": "D",
+                    "MeanAbsolute": 10.02780256996491,
+                    "RootMeanSquare": 43.10763415463155,
+                    "PeakAbsolute": 1979
+                  },
+                  {
+                    "Term": "F",
+                    "MeanAbsolute": 0.315902727683975,
+                    "RootMeanSquare": 1.0178680227363035,
+                    "PeakAbsolute": 18
+                  }
+                ],
+                "MissingTerms": []
+              },
+              {
+                "Axis": "Pitch",
+                "Terms": [
+                  {
+                    "Term": "P",
+                    "MeanAbsolute": 9.49337946717854,
+                    "RootMeanSquare": 51.59973273179038,
+                    "PeakAbsolute": 1808
+                  },
+                  {
+                    "Term": "I",
+                    "MeanAbsolute": 21.606778251885903,
+                    "RootMeanSquare": 31.222546400775492,
+                    "PeakAbsolute": 400
+                  },
+                  {
+                    "Term": "D",
+                    "MeanAbsolute": 11.291352349280483,
+                    "RootMeanSquare": 78.49689175617507,
+                    "PeakAbsolute": 4125
+                  },
+                  {
+                    "Term": "F",
+                    "MeanAbsolute": 0.17012874277120954,
+                    "RootMeanSquare": 0.4960875648049717,
+                    "PeakAbsolute": 6
+                  }
+                ],
+                "MissingTerms": []
+              },
+              {
+                "Axis": "Yaw",
+                "Terms": [
+                  {
+                    "Term": "P",
+                    "MeanAbsolute": 2.9330244158892786,
+                    "RootMeanSquare": 9.30566404697359,
+                    "PeakAbsolute": 333
+                  },
+                  {
+                    "Term": "I",
+                    "MeanAbsolute": 6.300033010966977,
+                    "RootMeanSquare": 12.343981520025153,
+                    "PeakAbsolute": 188
+                  },
+                  {
+                    "Term": "F",
+                    "MeanAbsolute": 0.6232226039539802,
+                    "RootMeanSquare": 1.3226896431386934,
+                    "PeakAbsolute": 10
+                  }
+                ],
+                "MissingTerms": [
+                  "D"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "TuningManeuverByMode": [
+        {
+          "Mode": "Horizon (Selbstaufrichtung nahe Stick-Mitte)",
+          "Assessment": {
+            "IsAvailable": true,
+            "Reason": "",
+            "Samples": 81791,
+            "DurationSeconds": 81.605002,
+            "SampleRateHz": 1002.2792475392624,
+            "Axes": [
+              {
+                "Axis": "Roll",
+                "HighStickExcursionCount": 0,
+                "TotalHighStickDurationSeconds": 0,
+                "PeakStickCommand": 0,
+                "PeakSetpointDps": 60,
+                "PeakSetpointAtHighStickDps": 0,
+                "NearFullStickExcursionCount": 0,
+                "PeakSetpointAtNearFullStickDps": 0
+              },
+              {
+                "Axis": "Pitch",
+                "HighStickExcursionCount": 0,
+                "TotalHighStickDurationSeconds": 0,
+                "PeakStickCommand": 0,
+                "PeakSetpointDps": 93,
+                "PeakSetpointAtHighStickDps": 0,
+                "NearFullStickExcursionCount": 0,
+                "PeakSetpointAtNearFullStickDps": 0
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "LogNumber": 5,
+      "TotalFrames": 44890,
+      "IFrames": 1403,
+      "PFrames": 43475,
+      "EventFrameCount": 5,
+      "LoopTimeMicroseconds": 125,
+      "Board": "BEFH BETAFPVG473_V3",
+      "FlightModeChangeCount": 1,
+      "FlightModeAvailable": true,
+      "FlightModeReason": "",
+      "FlightModeDurationSeconds": 40.664892,
+      "FlightModeTransitionCount": 0,
+      "FlightModeBoundaryEventCount": 1,
+      "FlightModes": [
+        {
+          "Mode": "Horizon (Selbstaufrichtung nahe Stick-Mitte)",
+          "Samples": 40762,
+          "DurationSeconds": 40.664892
+        }
+      ],
+      "FlightModeTransitions": [],
+      "Firmware": "Betaflight 2026.6.2 (e0b7bb01b) STM32G474",
+      "MotorAssessmentAvailable": true,
+      "MotorAssessmentReason": "",
+      "MotorAssessmentSamples": 34648,
+      "MotorAssessmentDurationSeconds": 40.655913,
+      "MotorOutputBiasPercent": [
+        8.720678819336802,
+        -7.136652590576988,
+        6.472692927112357,
+        -6.472692927112357
+      ],
+      "ErpmBiasPercent": [
+        6.263546921456024,
+        -6.336342554818389,
+        6.3438821514379145,
+        -6.263546921456046
+      ],
+      "StrongOutputDeviation": false,
+      "StrongErpmDeviation": false,
+      "SetpointTrackingAvailable": true,
+      "SetpointTrackingReason": "",
+      "SetpointTrackingSamples": 40762,
+      "SetpointTrackingDurationSeconds": 40.664892,
+      "SetpointTrackingAxes": [
+        {
+          "Axis": "Roll",
+          "MeanAbsoluteErrorDps": 6.623889897453511,
+          "Percentile95AbsoluteErrorDps": 6
+        },
+        {
+          "Axis": "Pitch",
+          "MeanAbsoluteErrorDps": 4.06496246504097,
+          "Percentile95AbsoluteErrorDps": 7
+        },
+        {
+          "Axis": "Yaw",
+          "MeanAbsoluteErrorDps": 2.5100583877140474,
+          "Percentile95AbsoluteErrorDps": 4
+        }
+      ],
+      "SetpointTrackingByMode": [
+        {
+          "Mode": "Horizon (Selbstaufrichtung nahe Stick-Mitte)",
+          "Assessment": {
+            "IsAvailable": true,
+            "Reason": "",
+            "Samples": 40762,
+            "DurationSeconds": 40.664892,
+            "Axes": [
+              {
+                "Axis": "Roll",
+                "MeanAbsoluteErrorDps": 6.623889897453511,
+                "Percentile95AbsoluteErrorDps": 6
+              },
+              {
+                "Axis": "Pitch",
+                "MeanAbsoluteErrorDps": 4.06496246504097,
+                "Percentile95AbsoluteErrorDps": 7
+              },
+              {
+                "Axis": "Yaw",
+                "MeanAbsoluteErrorDps": 2.5100583877140474,
+                "Percentile95AbsoluteErrorDps": 4
+              }
+            ]
+          }
+        }
+      ],
+      "PidActivityAvailable": true,
+      "PidActivityReason": "",
+      "PidActivitySamples": 40762,
+      "PidActivityDurationSeconds": 40.664892,
+      "PidActivityAxes": [
+        {
+          "Axis": "Roll",
+          "Terms": [
+            {
+              "Term": "P",
+              "MeanAbsolute": 9.595652813895295,
+              "RootMeanSquare": 78.62240680413937,
+              "PeakAbsolute": 2243
+            },
+            {
+              "Term": "I",
+              "MeanAbsolute": 5.391443010647172,
+              "RootMeanSquare": 28.963453773369565,
+              "PeakAbsolute": 400
+            },
+            {
+              "Term": "D",
+              "MeanAbsolute": 11.072420391541142,
+              "RootMeanSquare": 69.24241613872614,
+              "PeakAbsolute": 2534
+            },
+            {
+              "Term": "F",
+              "MeanAbsolute": 0.6205779893037633,
+              "RootMeanSquare": 3.1013338936537327,
+              "PeakAbsolute": 101
+            }
+          ],
+          "MissingTerms": []
+        },
+        {
+          "Axis": "Pitch",
+          "Terms": [
+            {
+              "Term": "P",
+              "MeanAbsolute": 6.159094254452676,
+              "RootMeanSquare": 36.45853727037058,
+              "PeakAbsolute": 1109
+            },
+            {
+              "Term": "I",
+              "MeanAbsolute": 28.001300230606937,
+              "RootMeanSquare": 32.43427529368589,
+              "PeakAbsolute": 270
+            },
+            {
+              "Term": "D",
+              "MeanAbsolute": 6.795373141651538,
+              "RootMeanSquare": 54.81845111636869,
+              "PeakAbsolute": 2942
+            },
+            {
+              "Term": "F",
+              "MeanAbsolute": 0.3019724252980717,
+              "RootMeanSquare": 0.9032077883384122,
+              "PeakAbsolute": 14
+            }
+          ],
+          "MissingTerms": []
+        },
+        {
+          "Axis": "Yaw",
+          "Terms": [
+            {
+              "Term": "P",
+              "MeanAbsolute": 3.1778862666208725,
+              "RootMeanSquare": 20.621168591588695,
+              "PeakAbsolute": 644
+            },
+            {
+              "Term": "I",
+              "MeanAbsolute": 4.34330994553751,
+              "RootMeanSquare": 16.25753345811112,
+              "PeakAbsolute": 320
+            },
+            {
+              "Term": "F",
+              "MeanAbsolute": 1.1170452872773662,
+              "RootMeanSquare": 2.007902302148381,
+              "PeakAbsolute": 35
+            }
+          ],
+          "MissingTerms": [
+            "D"
+          ]
+        }
+      ],
+      "PidActivityByMode": [
+        {
+          "Mode": "Horizon (Selbstaufrichtung nahe Stick-Mitte)",
+          "Assessment": {
+            "IsAvailable": true,
+            "Reason": "",
+            "Samples": 40762,
+            "DurationSeconds": 40.664892,
+            "Axes": [
+              {
+                "Axis": "Roll",
+                "Terms": [
+                  {
+                    "Term": "P",
+                    "MeanAbsolute": 9.595652813895295,
+                    "RootMeanSquare": 78.62240680413937,
+                    "PeakAbsolute": 2243
+                  },
+                  {
+                    "Term": "I",
+                    "MeanAbsolute": 5.391443010647172,
+                    "RootMeanSquare": 28.963453773369565,
+                    "PeakAbsolute": 400
+                  },
+                  {
+                    "Term": "D",
+                    "MeanAbsolute": 11.072420391541142,
+                    "RootMeanSquare": 69.24241613872614,
+                    "PeakAbsolute": 2534
+                  },
+                  {
+                    "Term": "F",
+                    "MeanAbsolute": 0.6205779893037633,
+                    "RootMeanSquare": 3.1013338936537327,
+                    "PeakAbsolute": 101
+                  }
+                ],
+                "MissingTerms": []
+              },
+              {
+                "Axis": "Pitch",
+                "Terms": [
+                  {
+                    "Term": "P",
+                    "MeanAbsolute": 6.159094254452676,
+                    "RootMeanSquare": 36.45853727037058,
+                    "PeakAbsolute": 1109
+                  },
+                  {
+                    "Term": "I",
+                    "MeanAbsolute": 28.001300230606937,
+                    "RootMeanSquare": 32.43427529368589,
+                    "PeakAbsolute": 270
+                  },
+                  {
+                    "Term": "D",
+                    "MeanAbsolute": 6.795373141651538,
+                    "RootMeanSquare": 54.81845111636869,
+                    "PeakAbsolute": 2942
+                  },
+                  {
+                    "Term": "F",
+                    "MeanAbsolute": 0.3019724252980717,
+                    "RootMeanSquare": 0.9032077883384122,
+                    "PeakAbsolute": 14
+                  }
+                ],
+                "MissingTerms": []
+              },
+              {
+                "Axis": "Yaw",
+                "Terms": [
+                  {
+                    "Term": "P",
+                    "MeanAbsolute": 3.1778862666208725,
+                    "RootMeanSquare": 20.621168591588695,
+                    "PeakAbsolute": 644
+                  },
+                  {
+                    "Term": "I",
+                    "MeanAbsolute": 4.34330994553751,
+                    "RootMeanSquare": 16.25753345811112,
+                    "PeakAbsolute": 320
+                  },
+                  {
+                    "Term": "F",
+                    "MeanAbsolute": 1.1170452872773662,
+                    "RootMeanSquare": 2.007902302148381,
+                    "PeakAbsolute": 35
+                  }
+                ],
+                "MissingTerms": [
+                  "D"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "TuningManeuverByMode": [
+        {
+          "Mode": "Horizon (Selbstaufrichtung nahe Stick-Mitte)",
+          "Assessment": {
+            "IsAvailable": true,
+            "Reason": "",
+            "Samples": 40762,
+            "DurationSeconds": 40.664892,
+            "SampleRateHz": 1002.3880058503536,
+            "Axes": [
+              {
+                "Axis": "Roll",
+                "HighStickExcursionCount": 0,
+                "TotalHighStickDurationSeconds": 0,
+                "PeakStickCommand": 0,
+                "PeakSetpointDps": 123,
+                "PeakSetpointAtHighStickDps": 0,
+                "NearFullStickExcursionCount": 0,
+                "PeakSetpointAtNearFullStickDps": 0
+              },
+              {
+                "Axis": "Pitch",
+                "HighStickExcursionCount": 0,
+                "TotalHighStickDurationSeconds": 0,
+                "PeakStickCommand": 0,
+                "PeakSetpointDps": 48,
+                "PeakSetpointAtHighStickDps": 0,
+                "NearFullStickExcursionCount": 0,
+                "PeakSetpointAtNearFullStickDps": 0
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "LogNumber": 6,
+      "TotalFrames": 8449,
+      "IFrames": 264,
+      "PFrames": 8177,
+      "EventFrameCount": 5,
+      "LoopTimeMicroseconds": 125,
+      "Board": "BEFH BETAFPVG473_V3",
+      "FlightModeChangeCount": 1,
+      "FlightModeAvailable": true,
+      "FlightModeReason": "",
+      "FlightModeDurationSeconds": 6.275231,
+      "FlightModeTransitionCount": 0,
+      "FlightModeBoundaryEventCount": 1,
+      "FlightModes": [
+        {
+          "Mode": "Horizon (Selbstaufrichtung nahe Stick-Mitte)",
+          "Samples": 6290,
+          "DurationSeconds": 6.275231
+        }
+      ],
+      "FlightModeTransitions": [],
+      "Firmware": "Betaflight 2026.6.2 (e0b7bb01b) STM32G474",
+      "MotorAssessmentAvailable": false,
+      "MotorAssessmentReason": "Zu kurze Log-Session oder keine Flug-CSV f\u00FCr die Motorbewertung.",
+      "MotorAssessmentSamples": 0,
+      "MotorAssessmentDurationSeconds": 0,
+      "MotorOutputBiasPercent": [],
+      "ErpmBiasPercent": [],
+      "StrongOutputDeviation": false,
+      "StrongErpmDeviation": false,
+      "SetpointTrackingAvailable": true,
+      "SetpointTrackingReason": "",
+      "SetpointTrackingSamples": 6290,
+      "SetpointTrackingDurationSeconds": 6.275231,
+      "SetpointTrackingAxes": [
+        {
+          "Axis": "Roll",
+          "MeanAbsoluteErrorDps": 15.787599364069953,
+          "Percentile95AbsoluteErrorDps": 65
+        },
+        {
+          "Axis": "Pitch",
+          "MeanAbsoluteErrorDps": 19.33402225755167,
+          "Percentile95AbsoluteErrorDps": 114
+        },
+        {
+          "Axis": "Yaw",
+          "MeanAbsoluteErrorDps": 3.1399046104928456,
+          "Percentile95AbsoluteErrorDps": 5
+        }
+      ],
+      "SetpointTrackingByMode": [
+        {
+          "Mode": "Horizon (Selbstaufrichtung nahe Stick-Mitte)",
+          "Assessment": {
+            "IsAvailable": true,
+            "Reason": "",
+            "Samples": 6290,
+            "DurationSeconds": 6.275231,
+            "Axes": [
+              {
+                "Axis": "Roll",
+                "MeanAbsoluteErrorDps": 15.787599364069953,
+                "Percentile95AbsoluteErrorDps": 65
+              },
+              {
+                "Axis": "Pitch",
+                "MeanAbsoluteErrorDps": 19.33402225755167,
+                "Percentile95AbsoluteErrorDps": 114
+              },
+              {
+                "Axis": "Yaw",
+                "MeanAbsoluteErrorDps": 3.1399046104928456,
+                "Percentile95AbsoluteErrorDps": 5
+              }
+            ]
+          }
+        }
+      ],
+      "PidActivityAvailable": true,
+      "PidActivityReason": "",
+      "PidActivitySamples": 6290,
+      "PidActivityDurationSeconds": 6.275231,
+      "PidActivityAxes": [
+        {
+          "Axis": "Roll",
+          "Terms": [
+            {
+              "Term": "P",
+              "MeanAbsolute": 24.101589825119238,
+              "RootMeanSquare": 125.10883846730857,
+              "PeakAbsolute": 1667
+            },
+            {
+              "Term": "I",
+              "MeanAbsolute": 14.584737678855326,
+              "RootMeanSquare": 50.59774968760884,
+              "PeakAbsolute": 400
+            },
+            {
+              "Term": "D",
+              "MeanAbsolute": 20.961844197138316,
+              "RootMeanSquare": 127.57103074574803,
+              "PeakAbsolute": 2321
+            },
+            {
+              "Term": "F",
+              "MeanAbsolute": 0.2082670906200318,
+              "RootMeanSquare": 0.7675866004492191,
+              "PeakAbsolute": 9
+            }
+          ],
+          "MissingTerms": []
+        },
+        {
+          "Axis": "Pitch",
+          "Terms": [
+            {
+              "Term": "P",
+              "MeanAbsolute": 30.36677265500795,
+              "RootMeanSquare": 132.86511981552195,
+              "PeakAbsolute": 1553
+            },
+            {
+              "Term": "I",
+              "MeanAbsolute": 29.43751987281399,
+              "RootMeanSquare": 67.73510079104696,
+              "PeakAbsolute": 400
+            },
+            {
+              "Term": "D",
+              "MeanAbsolute": 25.099364069952305,
+              "RootMeanSquare": 167.41831361266716,
+              "PeakAbsolute": 3064
+            },
+            {
+              "Term": "F",
+              "MeanAbsolute": 0.22209856915739268,
+              "RootMeanSquare": 0.5537844937345167,
+              "PeakAbsolute": 4
+            }
+          ],
+          "MissingTerms": []
+        },
+        {
+          "Axis": "Yaw",
+          "Terms": [
+            {
+              "Term": "P",
+              "MeanAbsolute": 3.963275039745628,
+              "RootMeanSquare": 17.2256094702516,
+              "PeakAbsolute": 278
+            },
+            {
+              "Term": "I",
+              "MeanAbsolute": 6.405882352941177,
+              "RootMeanSquare": 9.730216159895061,
+              "PeakAbsolute": 56
+            },
+            {
+              "Term": "F",
+              "MeanAbsolute": 0.5751987281399046,
+              "RootMeanSquare": 1.1023893691181323,
+              "PeakAbsolute": 7
+            }
+          ],
+          "MissingTerms": [
+            "D"
+          ]
+        }
+      ],
+      "PidActivityByMode": [
+        {
+          "Mode": "Horizon (Selbstaufrichtung nahe Stick-Mitte)",
+          "Assessment": {
+            "IsAvailable": true,
+            "Reason": "",
+            "Samples": 6290,
+            "DurationSeconds": 6.275231,
+            "Axes": [
+              {
+                "Axis": "Roll",
+                "Terms": [
+                  {
+                    "Term": "P",
+                    "MeanAbsolute": 24.101589825119238,
+                    "RootMeanSquare": 125.10883846730857,
+                    "PeakAbsolute": 1667
+                  },
+                  {
+                    "Term": "I",
+                    "MeanAbsolute": 14.584737678855326,
+                    "RootMeanSquare": 50.59774968760884,
+                    "PeakAbsolute": 400
+                  },
+                  {
+                    "Term": "D",
+                    "MeanAbsolute": 20.961844197138316,
+                    "RootMeanSquare": 127.57103074574803,
+                    "PeakAbsolute": 2321
+                  },
+                  {
+                    "Term": "F",
+                    "MeanAbsolute": 0.2082670906200318,
+                    "RootMeanSquare": 0.7675866004492191,
+                    "PeakAbsolute": 9
+                  }
+                ],
+                "MissingTerms": []
+              },
+              {
+                "Axis": "Pitch",
+                "Terms": [
+                  {
+                    "Term": "P",
+                    "MeanAbsolute": 30.36677265500795,
+                    "RootMeanSquare": 132.86511981552195,
+                    "PeakAbsolute": 1553
+                  },
+                  {
+                    "Term": "I",
+                    "MeanAbsolute": 29.43751987281399,
+                    "RootMeanSquare": 67.73510079104696,
+                    "PeakAbsolute": 400
+                  },
+                  {
+                    "Term": "D",
+                    "MeanAbsolute": 25.099364069952305,
+                    "RootMeanSquare": 167.41831361266716,
+                    "PeakAbsolute": 3064
+                  },
+                  {
+                    "Term": "F",
+                    "MeanAbsolute": 0.22209856915739268,
+                    "RootMeanSquare": 0.5537844937345167,
+                    "PeakAbsolute": 4
+                  }
+                ],
+                "MissingTerms": []
+              },
+              {
+                "Axis": "Yaw",
+                "Terms": [
+                  {
+                    "Term": "P",
+                    "MeanAbsolute": 3.963275039745628,
+                    "RootMeanSquare": 17.2256094702516,
+                    "PeakAbsolute": 278
+                  },
+                  {
+                    "Term": "I",
+                    "MeanAbsolute": 6.405882352941177,
+                    "RootMeanSquare": 9.730216159895061,
+                    "PeakAbsolute": 56
+                  },
+                  {
+                    "Term": "F",
+                    "MeanAbsolute": 0.5751987281399046,
+                    "RootMeanSquare": 1.1023893691181323,
+                    "PeakAbsolute": 7
+                  }
+                ],
+                "MissingTerms": [
+                  "D"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "TuningManeuverByMode": [
+        {
+          "Mode": "Horizon (Selbstaufrichtung nahe Stick-Mitte)",
+          "Assessment": {
+            "IsAvailable": true,
+            "Reason": "",
+            "Samples": 6290,
+            "DurationSeconds": 6.275231,
+            "SampleRateHz": 1002.3535388577727,
+            "Axes": [
+              {
+                "Axis": "Roll",
+                "HighStickExcursionCount": 0,
+                "TotalHighStickDurationSeconds": 0,
+                "PeakStickCommand": 0,
+                "PeakSetpointDps": 73,
+                "PeakSetpointAtHighStickDps": 0,
+                "NearFullStickExcursionCount": 0,
+                "PeakSetpointAtNearFullStickDps": 0
+              },
+              {
+                "Axis": "Pitch",
+                "HighStickExcursionCount": 0,
+                "TotalHighStickDurationSeconds": 0,
+                "PeakStickCommand": 0,
+                "PeakSetpointDps": 66,
+                "PeakSetpointAtHighStickDps": 0,
+                "NearFullStickExcursionCount": 0,
+                "PeakSetpointAtNearFullStickDps": 0
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "LogNumber": 7,
+      "TotalFrames": 63379,
+      "IFrames": 1981,
+      "PFrames": 61384,
+      "EventFrameCount": 5,
+      "LoopTimeMicroseconds": 125,
+      "Board": "BEFH BETAFPVG473_V3",
+      "FlightModeChangeCount": 1,
+      "FlightModeAvailable": true,
+      "FlightModeReason": "",
+      "FlightModeDurationSeconds": 57.826139,
+      "FlightModeTransitionCount": 0,
+      "FlightModeBoundaryEventCount": 1,
+      "FlightModes": [
+        {
+          "Mode": "Horizon (Selbstaufrichtung nahe Stick-Mitte)",
+          "Samples": 57959,
+          "DurationSeconds": 57.826139
+        }
+      ],
+      "FlightModeTransitions": [],
+      "Firmware": "Betaflight 2026.6.2 (e0b7bb01b) STM32G474",
+      "MotorAssessmentAvailable": true,
+      "MotorAssessmentReason": "",
+      "MotorAssessmentSamples": 51031,
+      "MotorAssessmentDurationSeconds": 57.682456,
+      "MotorOutputBiasPercent": [
+        6.226162564412052,
+        -5.247008158482549,
+        5.247008158482563,
+        -5.486667370825912
+      ],
+      "ErpmBiasPercent": [
+        4.884792862731552,
+        -4.7459251647206715,
+        4.7459251647206715,
+        -5.64770774889112
+      ],
+      "StrongOutputDeviation": false,
+      "StrongErpmDeviation": false,
+      "SetpointTrackingAvailable": true,
+      "SetpointTrackingReason": "",
+      "SetpointTrackingSamples": 57959,
+      "SetpointTrackingDurationSeconds": 57.826139,
+      "SetpointTrackingAxes": [
+        {
+          "Axis": "Roll",
+          "MeanAbsoluteErrorDps": 3.242464500767784,
+          "Percentile95AbsoluteErrorDps": 6
+        },
+        {
+          "Axis": "Pitch",
+          "MeanAbsoluteErrorDps": 3.3944339964457635,
+          "Percentile95AbsoluteErrorDps": 6
+        },
+        {
+          "Axis": "Yaw",
+          "MeanAbsoluteErrorDps": 2.379388878345037,
+          "Percentile95AbsoluteErrorDps": 5
+        }
+      ],
+      "SetpointTrackingByMode": [
+        {
+          "Mode": "Horizon (Selbstaufrichtung nahe Stick-Mitte)",
+          "Assessment": {
+            "IsAvailable": true,
+            "Reason": "",
+            "Samples": 57959,
+            "DurationSeconds": 57.826139,
+            "Axes": [
+              {
+                "Axis": "Roll",
+                "MeanAbsoluteErrorDps": 3.242464500767784,
+                "Percentile95AbsoluteErrorDps": 6
+              },
+              {
+                "Axis": "Pitch",
+                "MeanAbsoluteErrorDps": 3.3944339964457635,
+                "Percentile95AbsoluteErrorDps": 6
+              },
+              {
+                "Axis": "Yaw",
+                "MeanAbsoluteErrorDps": 2.379388878345037,
+                "Percentile95AbsoluteErrorDps": 5
+              }
+            ]
+          }
+        }
+      ],
+      "PidActivityAvailable": true,
+      "PidActivityReason": "",
+      "PidActivitySamples": 57959,
+      "PidActivityDurationSeconds": 57.826139,
+      "PidActivityAxes": [
+        {
+          "Axis": "Roll",
+          "Terms": [
+            {
+              "Term": "P",
+              "MeanAbsolute": 4.701909970841457,
+              "RootMeanSquare": 27.612525429339698,
+              "PeakAbsolute": 993
+            },
+            {
+              "Term": "I",
+              "MeanAbsolute": 4.277351231042633,
+              "RootMeanSquare": 13.071460347735549,
+              "PeakAbsolute": 245
+            },
+            {
+              "Term": "D",
+              "MeanAbsolute": 8.894649666143309,
+              "RootMeanSquare": 45.1235454457513,
+              "PeakAbsolute": 2499
+            },
+            {
+              "Term": "F",
+              "MeanAbsolute": 0.8217360547973568,
+              "RootMeanSquare": 2.0124399605453505,
+              "PeakAbsolute": 29
+            }
+          ],
+          "MissingTerms": []
+        },
+        {
+          "Axis": "Pitch",
+          "Terms": [
+            {
+              "Term": "P",
+              "MeanAbsolute": 5.164616366742007,
+              "RootMeanSquare": 34.94952918957058,
+              "PeakAbsolute": 1340
+            },
+            {
+              "Term": "I",
+              "MeanAbsolute": 22.493780085922808,
+              "RootMeanSquare": 26.652544577825118,
+              "PeakAbsolute": 393
+            },
+            {
+              "Term": "D",
+              "MeanAbsolute": 7.200952397384358,
+              "RootMeanSquare": 76.03248744213319,
+              "PeakAbsolute": 3862
+            },
+            {
+              "Term": "F",
+              "MeanAbsolute": 0.2912921202919305,
+              "RootMeanSquare": 0.7388175537289486,
+              "PeakAbsolute": 11
+            }
+          ],
+          "MissingTerms": []
+        },
+        {
+          "Axis": "Yaw",
+          "Terms": [
+            {
+              "Term": "P",
+              "MeanAbsolute": 3.072516779102469,
+              "RootMeanSquare": 23.393383704492972,
+              "PeakAbsolute": 1156
+            },
+            {
+              "Term": "I",
+              "MeanAbsolute": 4.736900222571128,
+              "RootMeanSquare": 15.874611118997613,
+              "PeakAbsolute": 320
+            },
+            {
+              "Term": "F",
+              "MeanAbsolute": 1.4148794837730119,
+              "RootMeanSquare": 2.653350682801949,
+              "PeakAbsolute": 24
+            }
+          ],
+          "MissingTerms": [
+            "D"
+          ]
+        }
+      ],
+      "PidActivityByMode": [
+        {
+          "Mode": "Horizon (Selbstaufrichtung nahe Stick-Mitte)",
+          "Assessment": {
+            "IsAvailable": true,
+            "Reason": "",
+            "Samples": 57959,
+            "DurationSeconds": 57.826139,
+            "Axes": [
+              {
+                "Axis": "Roll",
+                "Terms": [
+                  {
+                    "Term": "P",
+                    "MeanAbsolute": 4.701909970841457,
+                    "RootMeanSquare": 27.612525429339698,
+                    "PeakAbsolute": 993
+                  },
+                  {
+                    "Term": "I",
+                    "MeanAbsolute": 4.277351231042633,
+                    "RootMeanSquare": 13.071460347735549,
+                    "PeakAbsolute": 245
+                  },
+                  {
+                    "Term": "D",
+                    "MeanAbsolute": 8.894649666143309,
+                    "RootMeanSquare": 45.1235454457513,
+                    "PeakAbsolute": 2499
+                  },
+                  {
+                    "Term": "F",
+                    "MeanAbsolute": 0.8217360547973568,
+                    "RootMeanSquare": 2.0124399605453505,
+                    "PeakAbsolute": 29
+                  }
+                ],
+                "MissingTerms": []
+              },
+              {
+                "Axis": "Pitch",
+                "Terms": [
+                  {
+                    "Term": "P",
+                    "MeanAbsolute": 5.164616366742007,
+                    "RootMeanSquare": 34.94952918957058,
+                    "PeakAbsolute": 1340
+                  },
+                  {
+                    "Term": "I",
+                    "MeanAbsolute": 22.493780085922808,
+                    "RootMeanSquare": 26.652544577825118,
+                    "PeakAbsolute": 393
+                  },
+                  {
+                    "Term": "D",
+                    "MeanAbsolute": 7.200952397384358,
+                    "RootMeanSquare": 76.03248744213319,
+                    "PeakAbsolute": 3862
+                  },
+                  {
+                    "Term": "F",
+                    "MeanAbsolute": 0.2912921202919305,
+                    "RootMeanSquare": 0.7388175537289486,
+                    "PeakAbsolute": 11
+                  }
+                ],
+                "MissingTerms": []
+              },
+              {
+                "Axis": "Yaw",
+                "Terms": [
+                  {
+                    "Term": "P",
+                    "MeanAbsolute": 3.072516779102469,
+                    "RootMeanSquare": 23.393383704492972,
+                    "PeakAbsolute": 1156
+                  },
+                  {
+                    "Term": "I",
+                    "MeanAbsolute": 4.736900222571128,
+                    "RootMeanSquare": 15.874611118997613,
+                    "PeakAbsolute": 320
+                  },
+                  {
+                    "Term": "F",
+                    "MeanAbsolute": 1.4148794837730119,
+                    "RootMeanSquare": 2.653350682801949,
+                    "PeakAbsolute": 24
+                  }
+                ],
+                "MissingTerms": [
+                  "D"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "TuningManeuverByMode": [
+        {
+          "Mode": "Horizon (Selbstaufrichtung nahe Stick-Mitte)",
+          "Assessment": {
+            "IsAvailable": true,
+            "Reason": "",
+            "Samples": 57959,
+            "DurationSeconds": 57.826139,
+            "SampleRateHz": 1002.2975941727668,
+            "Axes": [
+              {
+                "Axis": "Roll",
+                "HighStickExcursionCount": 0,
+                "TotalHighStickDurationSeconds": 0,
+                "PeakStickCommand": 0,
+                "PeakSetpointDps": 106,
+                "PeakSetpointAtHighStickDps": 0,
+                "NearFullStickExcursionCount": 0,
+                "PeakSetpointAtNearFullStickDps": 0
+              },
+              {
+                "Axis": "Pitch",
+                "HighStickExcursionCount": 0,
+                "TotalHighStickDurationSeconds": 0,
+                "PeakStickCommand": 0,
+                "PeakSetpointDps": 44,
+                "PeakSetpointAtHighStickDps": 0,
+                "NearFullStickExcursionCount": 0,
+                "PeakSetpointAtNearFullStickDps": 0
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "LogNumber": 8,
+      "TotalFrames": 16550,
+      "IFrames": 518,
+      "PFrames": 16024,
+      "EventFrameCount": 5,
+      "LoopTimeMicroseconds": 125,
+      "Board": "BEFH BETAFPVG473_V3",
+      "FlightModeChangeCount": 1,
+      "FlightModeAvailable": true,
+      "FlightModeReason": "",
+      "FlightModeDurationSeconds": 8.874251,
+      "FlightModeTransitionCount": 1,
+      "FlightModeBoundaryEventCount": 1,
+      "FlightModes": [
+        {
+          "Mode": "Horizon (Selbstaufrichtung nahe Stick-Mitte)",
+          "Samples": 7904,
+          "DurationSeconds": 7.885381
+        },
+        {
+          "Mode": "Manuell/Acro (Betaflight-Standard ohne Angle/Horizon)",
+          "Samples": 991,
+          "DurationSeconds": 0.98887
+        }
+      ],
+      "FlightModeTransitions": [
+        {
+          "FromMode": "Manuell/Acro (Betaflight-Standard ohne Angle/Horizon)",
+          "ToMode": "Horizon (Selbstaufrichtung nahe Stick-Mitte)",
+          "TimeFromFlightStartSeconds": 0.98887
+        }
+      ],
+      "Firmware": "Betaflight 2026.6.2 (e0b7bb01b) STM32G474",
+      "MotorAssessmentAvailable": true,
+      "MotorAssessmentReason": "",
+      "MotorAssessmentSamples": 7223,
+      "MotorAssessmentDurationSeconds": 8.848309,
+      "MotorOutputBiasPercent": [
+        3.562468671484119,
+        -3.562468671484119,
+        7.001854544360139,
+        -4.8944819262354295
+      ],
+      "ErpmBiasPercent": [
+        2.388198700341609,
+        -2.388198700341609,
+        7.3181687654075445,
+        -5.598349635350766
+      ],
+      "StrongOutputDeviation": false,
+      "StrongErpmDeviation": false,
+      "SetpointTrackingAvailable": true,
+      "SetpointTrackingReason": "",
+      "SetpointTrackingSamples": 8895,
+      "SetpointTrackingDurationSeconds": 8.874251,
+      "SetpointTrackingAxes": [
+        {
+          "Axis": "Roll",
+          "MeanAbsoluteErrorDps": 56.70466554243957,
+          "Percentile95AbsoluteErrorDps": 70
+        },
+        {
+          "Axis": "Pitch",
+          "MeanAbsoluteErrorDps": 28.981450252951095,
+          "Percentile95AbsoluteErrorDps": 209
+        },
+        {
+          "Axis": "Yaw",
+          "MeanAbsoluteErrorDps": 35.241034288926365,
+          "Percentile95AbsoluteErrorDps": 55
+        }
+      ],
+      "SetpointTrackingByMode": [
+        {
+          "Mode": "Horizon (Selbstaufrichtung nahe Stick-Mitte)",
+          "Assessment": {
+            "IsAvailable": true,
+            "Reason": "",
+            "Samples": 7904,
+            "DurationSeconds": 7.885381,
+            "Axes": [
+              {
+                "Axis": "Roll",
+                "MeanAbsoluteErrorDps": 63.48013663967611,
+                "Percentile95AbsoluteErrorDps": 84
+              },
+              {
+                "Axis": "Pitch",
+                "MeanAbsoluteErrorDps": 32.3227479757085,
+                "Percentile95AbsoluteErrorDps": 235
+              },
+              {
+                "Axis": "Yaw",
+                "MeanAbsoluteErrorDps": 39.50581983805668,
+                "Percentile95AbsoluteErrorDps": 85
+              }
+            ]
+          }
+        },
+        {
+          "Mode": "Manuell/Acro (Betaflight-Standard ohne Angle/Horizon)",
+          "Assessment": {
+            "IsAvailable": false,
+            "Reason": "Zu wenige aktive Messwerte f\u00FCr einen Setpoint-/Gyro-Vergleich (991 Werte \u00FCber 1,0 s).",
+            "Samples": 991,
+            "DurationSeconds": 0.987872,
+            "Axes": []
+          }
+        }
+      ],
+      "PidActivityAvailable": true,
+      "PidActivityReason": "",
+      "PidActivitySamples": 8895,
+      "PidActivityDurationSeconds": 8.874251,
+      "PidActivityAxes": [
+        {
+          "Axis": "Roll",
+          "Terms": [
+            {
+              "Term": "P",
+              "MeanAbsolute": 33.472400224845416,
+              "RootMeanSquare": 258.5033759753805,
+              "PeakAbsolute": 3156
+            },
+            {
+              "Term": "I",
+              "MeanAbsolute": 8.652501405283868,
+              "RootMeanSquare": 40.679454121626335,
+              "PeakAbsolute": 400
+            },
+            {
+              "Term": "D",
+              "MeanAbsolute": 18.433164699269252,
+              "RootMeanSquare": 133.31571651464992,
+              "PeakAbsolute": 6097
+            },
+            {
+              "Term": "F",
+              "MeanAbsolute": 0.12602585722315907,
+              "RootMeanSquare": 0.4709670961130252,
+              "PeakAbsolute": 6
+            }
+          ],
+          "MissingTerms": []
+        },
+        {
+          "Axis": "Pitch",
+          "Terms": [
+            {
+              "Term": "P",
+              "MeanAbsolute": 32.98875772906127,
+              "RootMeanSquare": 135.39531237344875,
+              "PeakAbsolute": 1406
+            },
+            {
+              "Term": "I",
+              "MeanAbsolute": 26.52231590781338,
+              "RootMeanSquare": 54.893984389944634,
+              "PeakAbsolute": 400
+            },
+            {
+              "Term": "D",
+              "MeanAbsolute": 25.139066891512087,
+              "RootMeanSquare": 135.05300273202548,
+              "PeakAbsolute": 2475
+            },
+            {
+              "Term": "F",
+              "MeanAbsolute": 0.20022484541877458,
+              "RootMeanSquare": 0.5755951047084764,
+              "PeakAbsolute": 5
+            }
+          ],
+          "MissingTerms": []
+        },
+        {
+          "Axis": "Yaw",
+          "Terms": [
+            {
+              "Term": "P",
+              "MeanAbsolute": 50.33704328274312,
+              "RootMeanSquare": 303.51242555730477,
+              "PeakAbsolute": 2881
+            },
+            {
+              "Term": "I",
+              "MeanAbsolute": 15.798201236649803,
+              "RootMeanSquare": 39.7054514899574,
+              "PeakAbsolute": 320
+            },
+            {
+              "Term": "F",
+              "MeanAbsolute": 0.6205733558178752,
+              "RootMeanSquare": 2.728732469140096,
+              "PeakAbsolute": 38
+            }
+          ],
+          "MissingTerms": [
+            "D"
+          ]
+        }
+      ],
+      "PidActivityByMode": [
+        {
+          "Mode": "Horizon (Selbstaufrichtung nahe Stick-Mitte)",
+          "Assessment": {
+            "IsAvailable": true,
+            "Reason": "",
+            "Samples": 7904,
+            "DurationSeconds": 7.885381,
+            "Axes": [
+              {
+                "Axis": "Roll",
+                "Terms": [
+                  {
+                    "Term": "P",
+                    "MeanAbsolute": 37.18218623481781,
+                    "RootMeanSquare": 274.22479530546445,
+                    "PeakAbsolute": 3156
+                  },
+                  {
+                    "Term": "I",
+                    "MeanAbsolute": 8.739752024291498,
+                    "RootMeanSquare": 42.972564746012104,
+                    "PeakAbsolute": 400
+                  },
+                  {
+                    "Term": "D",
+                    "MeanAbsolute": 20.410298582995953,
+                    "RootMeanSquare": 141.42148550968196,
+                    "PeakAbsolute": 6097
+                  },
+                  {
+                    "Term": "F",
+                    "MeanAbsolute": 0.12158400809716599,
+                    "RootMeanSquare": 0.47601904326891786,
+                    "PeakAbsolute": 6
+                  }
+                ],
+                "MissingTerms": []
+              },
+              {
+                "Axis": "Pitch",
+                "Terms": [
+                  {
+                    "Term": "P",
+                    "MeanAbsolute": 36.67611336032389,
+                    "RootMeanSquare": 143.62187918336795,
+                    "PeakAbsolute": 1406
+                  },
+                  {
+                    "Term": "I",
+                    "MeanAbsolute": 26.704073886639677,
+                    "RootMeanSquare": 57.48176418276281,
+                    "PeakAbsolute": 400
+                  },
+                  {
+                    "Term": "D",
+                    "MeanAbsolute": 28.087677125506072,
+                    "RootMeanSquare": 143.26743813920754,
+                    "PeakAbsolute": 2475
+                  },
+                  {
+                    "Term": "F",
+                    "MeanAbsolute": 0.19218117408906882,
+                    "RootMeanSquare": 0.5665480744365594,
+                    "PeakAbsolute": 5
+                  }
+                ],
+                "MissingTerms": []
+              },
+              {
+                "Axis": "Yaw",
+                "Terms": [
+                  {
+                    "Term": "P",
+                    "MeanAbsolute": 56.44509109311741,
+                    "RootMeanSquare": 321.97691391956346,
+                    "PeakAbsolute": 2881
+                  },
+                  {
+                    "Term": "I",
+                    "MeanAbsolute": 11.808198380566802,
+                    "RootMeanSquare": 38.51651940669714,
+                    "PeakAbsolute": 320
+                  },
+                  {
+                    "Term": "F",
+                    "MeanAbsolute": 0.6424595141700404,
+                    "RootMeanSquare": 2.8836233111850302,
+                    "PeakAbsolute": 38
+                  }
+                ],
+                "MissingTerms": [
+                  "D"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Mode": "Manuell/Acro (Betaflight-Standard ohne Angle/Horizon)",
+          "Assessment": {
+            "IsAvailable": false,
+            "Reason": "Zu wenige aktive Messwerte f\u00FCr eine PID-Term-\u00DCbersicht (991 Werte \u00FCber 1,0 s).",
+            "Samples": 991,
+            "DurationSeconds": 0.987872,
+            "Axes": []
+          }
+        }
+      ],
+      "TuningManeuverByMode": [
+        {
+          "Mode": "Horizon (Selbstaufrichtung nahe Stick-Mitte)",
+          "Assessment": {
+            "IsAvailable": true,
+            "Reason": "",
+            "Samples": 7904,
+            "DurationSeconds": 7.885381,
+            "SampleRateHz": 1002.3612048675898,
+            "Axes": [
+              {
+                "Axis": "Roll",
+                "HighStickExcursionCount": 0,
+                "TotalHighStickDurationSeconds": 0,
+                "PeakStickCommand": 0,
+                "PeakSetpointDps": 149,
+                "PeakSetpointAtHighStickDps": 0,
+                "NearFullStickExcursionCount": 0,
+                "PeakSetpointAtNearFullStickDps": 0
+              },
+              {
+                "Axis": "Pitch",
+                "HighStickExcursionCount": 0,
+                "TotalHighStickDurationSeconds": 0,
+                "PeakStickCommand": 0,
+                "PeakSetpointDps": 81,
+                "PeakSetpointAtHighStickDps": 0,
+                "NearFullStickExcursionCount": 0,
+                "PeakSetpointAtNearFullStickDps": 0
+              }
+            ]
+          }
+        },
+        {
+          "Mode": "Manuell/Acro (Betaflight-Standard ohne Angle/Horizon)",
+          "Assessment": {
+            "IsAvailable": false,
+            "Reason": "Zu wenige aktive Messwerte f\u00FCr die Man\u00F6verabdeckung (991 Werte \u00FCber 1,0 s).",
+            "Samples": 991,
+            "DurationSeconds": 0.987872,
+            "SampleRateHz": 1003.1664021249717,
+            "Axes": [
+              {
+                "Axis": "Roll",
+                "HighStickExcursionCount": 0,
+                "TotalHighStickDurationSeconds": 0,
+                "PeakStickCommand": 0,
+                "PeakSetpointDps": 13,
+                "PeakSetpointAtHighStickDps": 0,
+                "NearFullStickExcursionCount": 0,
+                "PeakSetpointAtNearFullStickDps": 0
+              },
+              {
+                "Axis": "Pitch",
+                "HighStickExcursionCount": 0,
+                "TotalHighStickDurationSeconds": 0,
+                "PeakStickCommand": 0,
+                "PeakSetpointDps": 12,
+                "PeakSetpointAtHighStickDps": 0,
+                "NearFullStickExcursionCount": 0,
+                "PeakSetpointAtNearFullStickDps": 0
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "LogNumber": 9,
+      "TotalFrames": 19039,
+      "IFrames": 595,
+      "PFrames": 18435,
+      "EventFrameCount": 5,
+      "LoopTimeMicroseconds": 125,
+      "Board": "BEFH BETAFPVG473_V3",
+      "FlightModeChangeCount": 1,
+      "FlightModeAvailable": true,
+      "FlightModeReason": "",
+      "FlightModeDurationSeconds": 0.617631,
+      "FlightModeTransitionCount": 0,
+      "FlightModeBoundaryEventCount": 1,
+      "FlightModes": [
+        {
+          "Mode": "Horizon (Selbstaufrichtung nahe Stick-Mitte)",
+          "Samples": 620,
+          "DurationSeconds": 0.617631
+        }
+      ],
+      "FlightModeTransitions": [],
+      "Firmware": "Betaflight 2026.6.2 (e0b7bb01b) STM32G474",
+      "MotorAssessmentAvailable": true,
+      "MotorAssessmentReason": "Zu wenige aktive Messwerte f\u00FCr eine belastbare Motor-Plausibilit\u00E4tspr\u00FCfung.",
+      "MotorAssessmentSamples": 620,
+      "MotorAssessmentDurationSeconds": 0.617631,
+      "MotorOutputBiasPercent": [
+        -35.05592468575235,
+        67.24417524236954,
+        35.05592468575235,
+        -51.11761715257447
+      ],
+      "ErpmBiasPercent": [],
+      "StrongOutputDeviation": false,
+      "StrongErpmDeviation": false,
+      "SetpointTrackingAvailable": false,
+      "SetpointTrackingReason": "Zu wenige aktive Messwerte f\u00FCr einen Setpoint-/Gyro-Vergleich (620 Werte \u00FCber 0,6 s).",
+      "SetpointTrackingSamples": 620,
+      "SetpointTrackingDurationSeconds": 0.617631,
+      "SetpointTrackingAxes": [],
+      "SetpointTrackingByMode": [
+        {
+          "Mode": "Horizon (Selbstaufrichtung nahe Stick-Mitte)",
+          "Assessment": {
+            "IsAvailable": false,
+            "Reason": "Zu wenige aktive Messwerte f\u00FCr einen Setpoint-/Gyro-Vergleich (620 Werte \u00FCber 0,6 s).",
+            "Samples": 620,
+            "DurationSeconds": 0.617631,
+            "Axes": []
+          }
+        }
+      ],
+      "PidActivityAvailable": false,
+      "PidActivityReason": "Zu wenige aktive Messwerte f\u00FCr eine PID-Term-\u00DCbersicht (620 Werte \u00FCber 0,6 s).",
+      "PidActivitySamples": 620,
+      "PidActivityDurationSeconds": 0.617631,
+      "PidActivityAxes": [],
+      "PidActivityByMode": [
+        {
+          "Mode": "Horizon (Selbstaufrichtung nahe Stick-Mitte)",
+          "Assessment": {
+            "IsAvailable": false,
+            "Reason": "Zu wenige aktive Messwerte f\u00FCr eine PID-Term-\u00DCbersicht (620 Werte \u00FCber 0,6 s).",
+            "Samples": 620,
+            "DurationSeconds": 0.617631,
+            "Axes": []
+          }
+        }
+      ],
+      "TuningManeuverByMode": [
+        {
+          "Mode": "Horizon (Selbstaufrichtung nahe Stick-Mitte)",
+          "Assessment": {
+            "IsAvailable": false,
+            "Reason": "Zu wenige aktive Messwerte f\u00FCr die Man\u00F6verabdeckung (620 Werte \u00FCber 0,6 s).",
+            "Samples": 620,
+            "DurationSeconds": 0.617631,
+            "SampleRateHz": 1003.8356235357356,
+            "Axes": [
+              {
+                "Axis": "Roll",
+                "HighStickExcursionCount": 0,
+                "TotalHighStickDurationSeconds": 0,
+                "PeakStickCommand": 0,
+                "PeakSetpointDps": 8,
+                "PeakSetpointAtHighStickDps": 0,
+                "NearFullStickExcursionCount": 0,
+                "PeakSetpointAtNearFullStickDps": 0
+              },
+              {
+                "Axis": "Pitch",
+                "HighStickExcursionCount": 0,
+                "TotalHighStickDurationSeconds": 0,
+                "PeakStickCommand": 0,
+                "PeakSetpointDps": 5,
+                "PeakSetpointAtHighStickDps": 0,
+                "NearFullStickExcursionCount": 0,
+                "PeakSetpointAtNearFullStickDps": 0
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "LogNumber": 10,
+      "TotalFrames": 5016,
+      "IFrames": 157,
+      "PFrames": 4852,
+      "EventFrameCount": 5,
+      "LoopTimeMicroseconds": 125,
+      "Board": "BEFH BETAFPVG473_V3",
+      "FlightModeChangeCount": 1,
+      "FlightModeAvailable": true,
+      "FlightModeReason": "",
+      "FlightModeDurationSeconds": 0.259453,
+      "FlightModeTransitionCount": 0,
+      "FlightModeBoundaryEventCount": 1,
+      "FlightModes": [
+        {
+          "Mode": "Horizon (Selbstaufrichtung nahe Stick-Mitte)",
+          "Samples": 261,
+          "DurationSeconds": 0.259453
+        }
+      ],
+      "FlightModeTransitions": [],
+      "Firmware": "Betaflight 2026.6.2 (e0b7bb01b) STM32G474",
+      "MotorAssessmentAvailable": false,
+      "MotorAssessmentReason": "Zu kurze Log-Session oder keine Flug-CSV f\u00FCr die Motorbewertung.",
+      "MotorAssessmentSamples": 0,
+      "MotorAssessmentDurationSeconds": 0,
+      "MotorOutputBiasPercent": [],
+      "ErpmBiasPercent": [],
+      "StrongOutputDeviation": false,
+      "StrongErpmDeviation": false,
+      "SetpointTrackingAvailable": false,
+      "SetpointTrackingReason": "Zu wenige aktive Messwerte f\u00FCr einen Setpoint-/Gyro-Vergleich (261 Werte \u00FCber 0,3 s).",
+      "SetpointTrackingSamples": 261,
+      "SetpointTrackingDurationSeconds": 0.259453,
+      "SetpointTrackingAxes": [],
+      "SetpointTrackingByMode": [
+        {
+          "Mode": "Horizon (Selbstaufrichtung nahe Stick-Mitte)",
+          "Assessment": {
+            "IsAvailable": false,
+            "Reason": "Zu wenige aktive Messwerte f\u00FCr einen Setpoint-/Gyro-Vergleich (261 Werte \u00FCber 0,3 s).",
+            "Samples": 261,
+            "DurationSeconds": 0.259453,
+            "Axes": []
+          }
+        }
+      ],
+      "PidActivityAvailable": false,
+      "PidActivityReason": "Zu wenige aktive Messwerte f\u00FCr eine PID-Term-\u00DCbersicht (261 Werte \u00FCber 0,3 s).",
+      "PidActivitySamples": 261,
+      "PidActivityDurationSeconds": 0.259453,
+      "PidActivityAxes": [],
+      "PidActivityByMode": [
+        {
+          "Mode": "Horizon (Selbstaufrichtung nahe Stick-Mitte)",
+          "Assessment": {
+            "IsAvailable": false,
+            "Reason": "Zu wenige aktive Messwerte f\u00FCr eine PID-Term-\u00DCbersicht (261 Werte \u00FCber 0,3 s).",
+            "Samples": 261,
+            "DurationSeconds": 0.259453,
+            "Axes": []
+          }
+        }
+      ],
+      "TuningManeuverByMode": [
+        {
+          "Mode": "Horizon (Selbstaufrichtung nahe Stick-Mitte)",
+          "Assessment": {
+            "IsAvailable": false,
+            "Reason": "Zu wenige aktive Messwerte f\u00FCr die Man\u00F6verabdeckung (261 Werte \u00FCber 0,3 s).",
+            "Samples": 261,
+            "DurationSeconds": 0.259453,
+            "SampleRateHz": 1005.9625442758419,
+            "Axes": [
+              {
+                "Axis": "Roll",
+                "HighStickExcursionCount": 0,
+                "TotalHighStickDurationSeconds": 0,
+                "PeakStickCommand": 0,
+                "PeakSetpointDps": 56,
+                "PeakSetpointAtHighStickDps": 0,
+                "NearFullStickExcursionCount": 0,
+                "PeakSetpointAtNearFullStickDps": 0
+              },
+              {
+                "Axis": "Pitch",
+                "HighStickExcursionCount": 0,
+                "TotalHighStickDurationSeconds": 0,
+                "PeakStickCommand": 0,
+                "PeakSetpointDps": 7,
+                "PeakSetpointAtHighStickDps": 0,
+                "NearFullStickExcursionCount": 0,
+                "PeakSetpointAtNearFullStickDps": 0
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "LogNumber": 11,
+      "TotalFrames": 4581,
+      "IFrames": 143,
+      "PFrames": 4431,
+      "EventFrameCount": 5,
+      "LoopTimeMicroseconds": 125,
+      "Board": "BEFH BETAFPVG473_V3",
+      "FlightModeChangeCount": 1,
+      "FlightModeAvailable": false,
+      "FlightModeReason": "Im Log wurden keine auswertbaren Flugmodus-Zeitpunkte gefunden.",
+      "FlightModeDurationSeconds": 0,
+      "FlightModeTransitionCount": 0,
+      "FlightModeBoundaryEventCount": 0,
+      "FlightModes": [],
+      "FlightModeTransitions": [],
+      "Firmware": "Betaflight 2026.6.2 (e0b7bb01b) STM32G474",
+      "MotorAssessmentAvailable": false,
+      "MotorAssessmentReason": "Zu kurze Log-Session oder keine Flug-CSV f\u00FCr die Motorbewertung.",
+      "MotorAssessmentSamples": 0,
+      "MotorAssessmentDurationSeconds": 0,
+      "MotorOutputBiasPercent": [],
+      "ErpmBiasPercent": [],
+      "StrongOutputDeviation": false,
+      "StrongErpmDeviation": false,
+      "SetpointTrackingAvailable": false,
+      "SetpointTrackingReason": "Zu wenige aktive Messwerte f\u00FCr einen Setpoint-/Gyro-Vergleich (0 Werte \u00FCber 0,0 s).",
+      "SetpointTrackingSamples": 0,
+      "SetpointTrackingDurationSeconds": 0,
+      "SetpointTrackingAxes": [],
+      "SetpointTrackingByMode": [],
+      "PidActivityAvailable": false,
+      "PidActivityReason": "Zu wenige aktive Messwerte f\u00FCr eine PID-Term-\u00DCbersicht (0 Werte \u00FCber 0,0 s).",
+      "PidActivitySamples": 0,
+      "PidActivityDurationSeconds": 0,
+      "PidActivityAxes": [],
+      "PidActivityByMode": [],
+      "TuningManeuverByMode": []
+    }
+  ],
+  "UserHardwareChecks": [
+    {
+      "Step": "Propeller-Sichtpr\u00FCfung",
+      "Result": "Keine grobe sichtbare Auff\u00E4lligkeit; feine Abnutzung nicht ausgeschlossen",
+      "RecordedAtUtc": "2026-10-06T13:56:42.3389462Z"
+    },
+    {
+      "Step": "Mechanische Motorpr\u00FCfung",
+      "Result": "Kein auff\u00E4lliger Widerstand bemerkt; Motorfehler nicht sicher ausgeschlossen",
+      "RecordedAtUtc": "2026-10-06T13:56:42.8391085Z"
+    },
+    {
+      "Step": "Kabel-/L\u00F6tstellenpr\u00FCfung",
+      "Result": "Keine sichtbare Auff\u00E4lligkeit gemeldet",
+      "RecordedAtUtc": "2026-10-06T13:56:43.2507487Z"
+    }
+  ],
+  "ShortLogSessionNumbers": [],
+  "ShortLogRecoveryContext": "",
+  "TuningBaseline": null,
+  "TuningRecommendationHistory": [],
+  "ExportedTuningProposals": []
+}

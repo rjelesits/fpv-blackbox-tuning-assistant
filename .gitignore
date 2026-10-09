@@ -1,0 +1,57 @@
+# Build output
+[Bb]in/
+[Oo]bj/
+[pP]ublish/
+[bB]eta-win-x64*/
+
+# Local tooling state and verification output
+.appdata/
+.dotnet-home/
+.dotnet-cli-home/
+.task-appdata/
+.verification*/
+
+# Generated release packages
+*.zip
+
+# Local blackbox logs, extracted CSVs, and scratch work
+work/
+
+# Secrets and local credentials
+.env
+.env.*
+!.env.example
+!.env.sample
+*.pem
+*.key
+*.pfx
+*.p12
+*.credentials.json
+secrets.json
+appsettings.*.local.json
+
+# IDE and machine-specific state
+.vs/
+.vscode/
+*.user
+*.suo
+
+# Private flight data and generated analysis
+[Ll]ogs/
+[Dd]ata/
+*.bbl
+*.BBL
+*.bfl
+*.BFL
+*.csv
+*.event
+*.analysis.json
+log-library.json
+*.cli
+*.log
+*.dmp
+*.tmp
+docs/analysis/
+
+# Required redistributable decoder source archive
+!third_party/bbl_parser/v1.1.1/bbl_parser-v1.1.1-source.zip

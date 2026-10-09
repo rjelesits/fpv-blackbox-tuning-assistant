@@ -1,0 +1,16 @@
+FPV Blackbox Tuning Assistant Beta 0.2.0-beta.18 – Voraussetzungen
+
+Windows 10/11 x64
+.NET 10 Desktop Runtime (x64)
+Microsoft Visual C++ Redistributable (x64), Version 14 / 2015 oder neuer
+
+Der BBL-Decoder benötigt VCRUNTIME140.dll. Microsoft-Download:
+https://aka.ms/vc14/vc_redist.x64.exe
+
+Falls die App bereits geöffnet ist, nach der Runtime-Installation schließen
+und neu starten. Die VC++-Laufzeit wird vom Setup installiert; die App
+installiert sie nicht selbst.
+
+Beta-Build aus dem Quellprojekt: Build-Beta.ps1 in PowerShell ausführen.
+Dazu wird das .NET 10 SDK benötigt. Das veröffentlichte Beta-ZIP enthält
+die App-Dateien, aber keinen Installer.

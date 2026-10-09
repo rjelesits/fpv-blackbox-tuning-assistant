@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101714">
+  <title>FPV Blackbox Tuning Assistant</title>
+  <style>
+    :root{color-scheme:dark;--bg:#101714;--panel:#171f1b;--panel2:#1c2621;--line:#2b3931;--text:#edf3ed;--muted:#9aa99f;--green:#b8ef7b;--lime:#d9ffab;--amber:#f1c978;--red:#ff837c;--blue:#93c8b5;font:15px/1.55 "Segoe UI",system-ui,sans-serif}
+    *{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 90% 0%,#233329 0,transparent 34%),var(--bg);color:var(--text)}button{font:inherit;color:inherit}.shell{display:grid;grid-template-columns:245px minmax(0,1fr);min-height:100vh}.side{border-right:1px solid var(--line);padding:28px 18px;background:#111915cc}.brand{display:flex;gap:12px;align-items:center;padding:4px 8px 28px}.brand-icon{display:grid;place-items:center;width:40px;height:40px;border:1px solid #638050;border-radius:13px;color:var(--lime);background:#263322;font-size:20px}.brand strong{display:block;font-size:14px;letter-spacing:.02em}.brand span{color:var(--muted);font-size:12px}.nav-label{padding:14px 10px 7px;color:#75847a;text-transform:uppercase;letter-spacing:.12em;font-size:10px;font-weight:700}.nav{display:flex;align-items:center;gap:11px;padding:10px;border-radius:9px;color:#b9c5bc;font-size:13px}.nav.active{background:#263429;color:var(--lime)}.nav .ico{width:18px;text-align:center;font-size:15px}.side-foot{position:fixed;bottom:18px;width:205px;color:#75847a;font-size:11px}.main{max-width:1420px;width:100%;margin:auto;padding:34px 48px 64px}.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:34px}.crumb{color:var(--muted);font-size:12px}.status-pill{border:1px solid #35523c;background:#1d2e22;border-radius:30px;padding:7px 12px;color:#c5efa0;font-size:11px;letter-spacing:.04em}.hero{display:flex;justify-content:space-between;gap:28px;align-items:end;margin-bottom:25px}.eyebrow{color:var(--green);font-weight:700;font-size:11px;letter-spacing:.14em;text-transform:uppercase}.hero h1{font-size:34px;line-height:1.14;letter-spacing:-.035em;margin:9px 0 8px;font-weight:650}.hero p{color:var(--muted);max-width:640px;margin:0;font-size:14px}.hero-tag{white-space:nowrap;color:#b8c6bb;font-size:12px}.hero-tag b{color:var(--lime);font-weight:600}.steps{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);background:#141c18;border-radius:13px;margin-bottom:26px;overflow:hidden}.step{padding:13px 16px;display:flex;align-items:center;gap:10px;color:#84948a;border-right:1px solid var(--line);font-size:12px}.step:last-child{border:0}.step.done{color:#d8e4d8}.step.current{background:#202c22;color:var(--lime)}.num{display:grid;place-items:center;width:22px;height:22px;border:1px solid #45564a;border-radius:50%;font-size:10px}.step.current .num{border-color:#92be5d;background:#33442b}.grid{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(270px,.9fr);gap:18px}.card{border:1px solid var(--line);background:linear-gradient(145deg,#1a231e,#151c18);border-radius:14px;padding:21px}.card-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}.card h2{font-size:15px;font-weight:650;margin:0}.kicker{color:var(--muted);font-size:11px}.drop{min-height:250px;border:1px dashed #526657;border-radius:11px;background:#141d17;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:24px;transition:.2s}.drop.over{border-color:var(--green);background:#1c2a20}.upload-icon{width:47px;height:47px;border:1px solid #3d5141;border-radius:15px;display:grid;place-items:center;color:var(--lime);font-size:23px;background:#202b22;margin-bottom:14px}.drop strong{font-size:15px}.drop p{color:var(--muted);font-size:12px;margin:5px 0 16px}.btn{border:1px solid #68864e;border-radius:8px;background:#c4f58b;color:#162015;padding:9px 15px;font-size:12px;font-weight:700;cursor:pointer}.btn:hover{background:#d6ffab}.btn-secondary{border-color:#3b4b3f;background:#202a23;color:#dce7dc}.btn-secondary:hover{background:#29372d}.drop-note{color:#78877c;font-size:10px;margin-top:13px}.file-input{display:none}.fileline{width:100%;max-width:460px;display:none;align-items:center;justify-content:space-between;gap:12px;border:1px solid var(--line);border-radius:9px;padding:11px 12px;text-align:left;margin-top:14px}.fileline.show{display:flex}.fileinfo{overflow:hidden}.filename{font-size:12px;white-space:nowrap;text-overflow:ellipsis;overflow:hidden}.filesize{color:var(--muted);font-size:10px}.tag{border:1px solid #536146;color:#d8f2ad;background:#283524;border-radius:30px;padding:3px 8px;font-size:10px;white-space:nowrap}.insight{display:flex;gap:12px;padding:13px;border:1px solid #39473a;border-radius:10px;background:#20281f;margin-top:15px}.insight-icon{color:var(--green);font-size:17px}.insight strong{font-size:12px;display:block}.insight p{color:#aab6aa;font-size:11px;margin:3px 0 0}.aside-card{height:100%}.metric{display:flex;justify-content:space-between;gap:10px;padding:12px 0;border-bottom:1px solid #29352d;font-size:12px}.metric:last-of-type{border:0}.metric span{color:var(--muted)}.metric b{font-size:11px;font-weight:600;text-align:right}.pending{color:#b8c7bc}.good{color:var(--green)}.warn{color:var(--amber)}.alert{border:1px solid #524934;border-radius:9px;background:#28251d;padding:13px;margin-top:18px}.alert strong{font-size:11px;color:var(--amber)}.alert p{font-size:11px;color:#b6b2a5;margin:4px 0 0}.section{margin-top:25px}.section-title{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:12px}.section-title h2{font-size:15px;margin:0}.section-title span{font-size:11px;color:var(--muted)}.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.feature{border:1px solid var(--line);border-radius:11px;background:#161e19;padding:15px}.feature .sym{color:var(--green);font-size:16px}.feature h3{font-size:12px;margin:7px 0 3px}.feature p{font-size:11px;color:var(--muted);margin:0}.disclaimer{margin-top:17px;color:#7d8b81;font-size:10px;border-left:2px solid #718d53;padding-left:10px}.footer{display:flex;justify-content:space-between;margin-top:33px;padding-top:14px;border-top:1px solid var(--line);color:#718076;font-size:10px}
+    @media(max-width:900px){.shell{grid-template-columns:1fr}.side{display:none}.main{padding:24px 20px}.grid{grid-template-columns:1fr}.hero{align-items:start;flex-direction:column}.hero h1{font-size:29px}.steps{grid-template-columns:repeat(2,1fr)}.step:nth-child(2){border-right:0}.step:nth-child(-n+2){border-bottom:1px solid var(--line)}.feature-grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+<div class="shell">
+  <aside class="side">
+    <div class="brand"><div class="brand-icon">⌁</div><div><strong>FPV BLACKBOX</strong><span>Tuning Assistant</span></div></div>
+    <div class="nav-label">Analyse</div>
+    <div class="nav active"><span class="ico">◈</span>Log importieren</div>
+    <div class="nav"><span class="ico">▤</span>Flugübersicht</div>
+    <div class="nav"><span class="ico">⌁</span>Motoren & Hardware</div>
+    <div class="nav"><span class="ico">⌖</span>Gyro & Setpoint</div>
+    <div class="nav"><span class="ico">∿</span>Noise & Filter</div>
+    <div class="nav-label">Verlauf</div>
+    <div class="nav"><span class="ico">◷</span>Flugvergleiche</div>
+    <div class="side-foot">Daten zuerst. Tuning danach.</div>
+  </aside>
+  <main class="main">
+    <div class="top"><div class="crumb">Analyse <span style="color:#607066">/</span> Neuer Flug</div><div class="status-pill">● ANALYSE IN BEREITSCHAFT</div></div>
+    <div class="hero"><div><div class="eyebrow">FPV BLACKBOX TUNING ASSISTANT</div><h1>Erst verstehen.<br>Dann optimieren.</h1><p>Importiere einen Betaflight-Blackbox-Log. Die App prüft zuerst die Datenqualität und Hardware-Plausibilität, bevor sie Tuning-Hinweise erstellt.</p></div><div class="hero-tag">Analyse-Workflow <b>01 / 04</b></div></div>
+    <div class="steps"><div class="step current"><span class="num">1</span>Log & Datenqualität</div><div class="step"><span class="num">2</span>Hardwarecheck</div><div class="step"><span class="num">3</span>Tuning-Analyse</div><div class="step"><span class="num">4</span>Empfehlungen</div></div>
+    <div class="grid">
+      <section class="card"><div class="card-head"><h2>Blackbox-Log importieren</h2><span class="kicker">Betaflight · .BBL</span></div>
+        <div class="drop" id="drop"><div class="upload-icon">↑</div><strong>Log hier ablegen</strong><p>oder eine Datei auf deinem Computer auswählen</p><button class="btn" id="choose">Datei auswählen</button><input class="file-input" id="file" type="file" accept=".bbl,.BBL,application/octet-stream"><div class="drop-note">Die Datei wird lokal im Browser gelesen und nicht hochgeladen.</div><div class="fileline" id="fileline"><div class="fileinfo"><div class="filename" id="filename"></div><div class="filesize" id="filesize"></div></div><span class="tag" id="tag">WIRD GEPRÜFT</span></div></div>
+        <div class="insight"><span class="insight-icon">✳</span><div><strong>Der Hardwarecheck führt dich gezielt durch die Prüfung.</strong><p>Bei einer Motorabweichung fragt die App zuerst nach sichtbaren Schäden an Propeller und Motorumgebung. Nur wenn optisch alles unauffällig ist, folgt die mechanische Prüfung.</p></div></div>
+      </section>
+      <section class="card aside-card"><div class="card-head"><h2>Log-Status</h2><span class="kicker">Wird nach Import ermittelt</span></div>
+        <div class="metric"><span>Datei</span><b id="m-file" class="pending">Noch nicht geladen</b></div>
+        <div class="metric"><span>Blackbox-Header</span><b id="m-header" class="pending">Ausstehend</b></div>
+        <div class="metric"><span>Binärdatenbereich</span><b id="m-data" class="pending">Ausstehend</b></div>
+        <div class="metric"><span>Flug-Frames dekodiert</span><b id="m-frames" class="pending">Decoder erforderlich</b></div>
+        <div class="metric"><span>Hardware-Status</span><b id="m-hardware" class="pending">Noch nicht geprüft</b></div>
+        <div class="alert"><strong>WICHTIG · KEINE VORZEITIGE DIAGNOSE</strong><p>Das Vorhandensein von Binärdaten belegt noch keine erfolgreich dekodierbaren Flug-Frames. Motorwerte und Anomalien werden erst nach einer vollständigen BBL-Dekodierung bewertet.</p></div>
+      </section>
+    </div>
+    <section class="section"><div class="section-title"><h2>Der Analyseablauf</h2><span>Nachvollziehbar in jeder Phase</span></div><div class="feature-grid">
+      <div class="feature"><span class="sym">◉</span><h3>Datenqualität zuerst</h3><p>Header und Nutzdaten prüfen. Fehlende oder unlesbare Frames stoppen die Analyse.</p></div>
+      <div class="feature"><span class="sym">⌁</span><h3>Hardware-Plausibilität</h3><p>Motor-Output, eRPM, Gyro-Reaktion und zeitliche Konsistenz gemeinsam bewerten.</p></div>
+      <div class="feature"><span class="sym">↗</span><h3>Tuning mit Messbezug</h3><p>Empfehlungen erst nach bestandenem Gate und mit Begründung anhand der Logdaten.</p></div>
+    </div></section>
+    <div class="disclaimer">Prüfhinweise grenzen mögliche Ursachen ein, bestätigen oder widerlegen einen Defekt aber nicht sicher. Vor mechanischen Prüfungen: Akku abziehen und Propeller abnehmen.</div>
+    <div class="footer"><span>FPV Blackbox Tuning Assistant · Konzeptprototyp</span><span>Decoder-Integration ist in der nativen WPF-App</span></div>
+  </main>
+</div>
+<script>
+const input=document.querySelector('#file'),drop=document.querySelector('#drop');
+document.querySelector('#choose').addEventListener('click',()=>input.click());
+input.addEventListener('change',()=>{if(input.files[0]) inspect(input.files[0])});
+for(const ev of ['dragenter','dragover'])drop.addEventListener(ev,e=>{e.preventDefault();drop.classList.add('over')});
+for(const ev of ['dragleave','drop'])drop.addEventListener(ev,e=>{e.preventDefault();drop.classList.remove('over')});
+drop.addEventListener('drop',e=>{const f=e.dataTransfer.files[0];if(f)inspect(f)});
+const set=(id,value,cls='pending')=>{const el=document.getElementById(id);el.textContent=value;el.className=cls};
+async function inspect(file){
+  document.querySelector('#fileline').classList.add('show');document.querySelector('#filename').textContent=file.name;document.querySelector('#filesize').textContent=(file.size/1048576).toFixed(2)+' MB';document.querySelector('#tag').textContent='WIRD GEPRÜFT';
+  set('m-file',file.name);set('m-header','Wird geprüft …');set('m-data','Wird geprüft …');set('m-frames','Decoder erforderlich');set('m-hardware','Noch nicht geprüft');
+  try{const buf=await file.arrayBuffer(),bytes=new Uint8Array(buf),limit=Math.min(bytes.length,Math.max(65536,Math.min(2*1024*1024,bytes.length)));let header='';for(let i=0;i<limit;i++)header+=String.fromCharCode(bytes[i]);
+    const signature='H Product:Blackbox flight data recorder';const valid=header.includes(signature);const firstBinary=bytes.findIndex((b,i)=>i>100&&b!==10&&b!==13&&b!==32&&b!==9&&bytes[i-1]===10&&b!==72);
+    set('m-header',valid?'Signatur gefunden':'Nicht erkannt',valid?'good':'warn');
+    const payload=valid&&firstBinary>=0&&bytes.length-firstBinary>0;
+    set('m-data',payload?'Vorhanden · '+((bytes.length-firstBinary)/1048576).toFixed(2)+' MB':'Nicht bestätigt',payload?'good':'warn');
+    set('m-frames','Noch nicht dekodiert','warn');set('m-hardware','Noch nicht geprüft','pending');
+    document.querySelector('#tag').textContent=valid?'HEADER GEFUNDEN':'PRÜFEN';
+    if(!valid)document.querySelector('.drop-note').textContent='Die Datei enthält am Anfang keine erkennbare Betaflight-Blackbox-Signatur.';
+    else if(payload)document.querySelector('.drop-note').textContent='Header erkannt. Datenbereich vorhanden; erfolgreiche Frame-Dekodierung ist noch offen.';
+    else document.querySelector('.drop-note').textContent='Header erkannt, aber ein Datenbereich konnte nicht bestätigt werden.';
+  }catch(err){set('m-header','Lesefehler','warn');set('m-data','Nicht geprüft','pending');document.querySelector('#tag').textContent='LESEFEHLER'}
+}
+</script>
+</body>
+</html>

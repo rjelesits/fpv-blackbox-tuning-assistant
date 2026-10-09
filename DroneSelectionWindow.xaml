@@ -1,0 +1,36 @@
+<Window x:Class="FPVBlackboxTuningAssistant.DroneSelectionWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Analyse speichern"
+        Width="560" Height="465" MinWidth="560" MinHeight="465" MaxWidth="560" MaxHeight="465"
+        ResizeMode="NoResize" WindowStartupLocation="CenterOwner"
+        Background="{StaticResource CanvasBrush}">
+  <Grid Margin="24">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="*" />
+      <RowDefinition Height="Auto" />
+    </Grid.RowDefinitions>
+    <TextBlock Text="Analyse abgeschlossen – Log speichern" FontSize="19" FontWeight="SemiBold" />
+    <TextBlock Grid.Row="1" Text="Ordne den Flug einer Drohne zu und lege den Namen für Log und Auswertung fest." Foreground="{StaticResource MutedBrush}" FontSize="12" Margin="0,7,0,14" />
+    <StackPanel Grid.Row="2">
+      <Border Background="#20281F" BorderBrush="#39473A" BorderThickness="1" CornerRadius="8" Padding="10" Margin="0,0,0,14">
+        <StackPanel>
+          <TextBlock Text="Flightcontroller-Modell aus dem Log" Foreground="{StaticResource MutedBrush}" FontSize="11" />
+          <TextBlock x:Name="FlightControllerModelText" Text="Wird ausgewertet" FontSize="13" FontWeight="SemiBold" Margin="0,3,0,0" />
+        </StackPanel>
+      </Border>
+      <TextBlock Text="Drohnenname / Modell" FontSize="12" FontWeight="SemiBold" Margin="0,0,0,6" />
+      <ComboBox x:Name="DroneNameComboBox" IsEditable="True" IsTextSearchEnabled="True" Height="36" FontSize="13" />
+      <TextBlock Text="Der erkannte FC-Name wird vorgeschlagen und als eigener Ordner verwendet. Wenn mehrere Drohnen dasselbe FC-Modell nutzen, gib ihnen hier unterschiedliche Namen." Foreground="{StaticResource MutedBrush}" FontSize="11" TextWrapping="Wrap" Margin="0,6,0,0" />
+      <TextBlock Text="Dateiname für Log und Auswertung" FontSize="12" FontWeight="SemiBold" Margin="0,17,0,6" />
+      <TextBox x:Name="LogNameTextBox" Height="36" FontSize="13" VerticalContentAlignment="Center" />
+      <TextBlock Text="Vorgeschlagener Name: ursprünglicher BBL-Dateiname. Gespeichert werden .BBL und .analysis.json mit demselben Namen. Die Dateien liegen lokal unter Dokumente bei der ausgewählten Drohne." Foreground="#AAB6AA" FontSize="11" TextWrapping="Wrap" Margin="0,8,0,0" />
+    </StackPanel>
+    <WrapPanel Grid.Row="3" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,16,0,0">
+      <Button Content="Abbrechen" Click="Cancel_Click" Background="#202B22" Foreground="{StaticResource TextBrush}" BorderBrush="#46564A" Margin="0,0,8,0" />
+      <Button Content="Log und Auswertung speichern" Click="Save_Click" />
+    </WrapPanel>
+  </Grid>
+</Window>

@@ -1,0 +1,128 @@
+<Window x:Class="FPVBlackboxTuningAssistant.FlightComparisonWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Flugvergleiche"
+        Width="1120" Height="800" MinWidth="980" MinHeight="680"
+        Background="{StaticResource CanvasBrush}" WindowStartupLocation="CenterOwner">
+  <Window.Resources>
+    <Style TargetType="ComboBox">
+      <Setter Property="Height" Value="36" />
+      <Setter Property="FontSize" Value="12" />
+      <Setter Property="Padding" Value="8,5" />
+    </Style>
+  </Window.Resources>
+  <ScrollViewer VerticalScrollBarVisibility="Auto">
+    <StackPanel Margin="30,26,30,30">
+      <TextBlock Text="Flugvergleiche" FontSize="25" FontWeight="SemiBold" />
+      <TextBlock Text="Wähle gespeicherte Dateien und einzelne Sessions. Die App vergleicht Soll-/Ist- und PID-Messwerte und zeigt – sofern passende dump-all-Snapshots vorliegen – geänderte Tuning-Werte zwischen A und B." Foreground="{StaticResource MutedBrush}" FontSize="13" TextWrapping="Wrap" Margin="0,7,0,20" MaxWidth="900" />
+
+      <Grid>
+        <Grid.ColumnDefinitions><ColumnDefinition /><ColumnDefinition /></Grid.ColumnDefinitions>
+        <Border Grid.Column="0" Background="{StaticResource PanelBrush}" BorderBrush="{StaticResource LineBrush}" BorderThickness="1" CornerRadius="10" Padding="16" Margin="0,0,7,0">
+          <StackPanel>
+            <TextBlock Text="FLUG A" Foreground="{StaticResource AccentBrush}" FontSize="10" FontWeight="Bold" Margin="0,0,0,10" />
+            <TextBlock Text="Gespeicherte BBL-Auswertung" Foreground="{StaticResource MutedBrush}" FontSize="11" Margin="0,0,0,5" />
+            <ComboBox x:Name="FlightAComboBox" DisplayMemberPath="DisplayLabel" SelectionChanged="Flight_SelectionChanged" />
+            <TextBlock Text="Session mit Soll-/Ist-Kennzahl" Foreground="{StaticResource MutedBrush}" FontSize="11" Margin="0,12,0,5" />
+            <ComboBox x:Name="SessionAComboBox" DisplayMemberPath="DisplayLabel" />
+          </StackPanel>
+        </Border>
+        <Border Grid.Column="1" Background="{StaticResource PanelBrush}" BorderBrush="{StaticResource LineBrush}" BorderThickness="1" CornerRadius="10" Padding="16" Margin="7,0,0,0">
+          <StackPanel>
+            <TextBlock Text="FLUG B" Foreground="{StaticResource AccentBrush}" FontSize="10" FontWeight="Bold" Margin="0,0,0,10" />
+            <TextBlock Text="Gespeicherte BBL-Auswertung" Foreground="{StaticResource MutedBrush}" FontSize="11" Margin="0,0,0,5" />
+            <ComboBox x:Name="FlightBComboBox" DisplayMemberPath="DisplayLabel" SelectionChanged="Flight_SelectionChanged" />
+            <TextBlock Text="Session mit Soll-/Ist-Kennzahl" Foreground="{StaticResource MutedBrush}" FontSize="11" Margin="0,12,0,5" />
+            <ComboBox x:Name="SessionBComboBox" DisplayMemberPath="DisplayLabel" />
+          </StackPanel>
+        </Border>
+      </Grid>
+
+      <Border Background="{StaticResource PanelBrush}" BorderBrush="{StaticResource LineBrush}" BorderThickness="1" CornerRadius="10" Padding="16" Margin="0,14,0,0">
+        <StackPanel>
+          <TextBlock Text="ALLE ERKANNTEN SESSIONS" Foreground="{StaticResource AccentBrush}" FontSize="10" FontWeight="Bold" />
+          <TextBlock Text="Die Übersicht zeigt jede Session der ausgewählten BBL-Dateien. Nur Sessions mit genügend aktiven Messwerten sind für den Kennzahlenvergleich auswählbar." Foreground="{StaticResource MutedBrush}" FontSize="11" TextWrapping="Wrap" Margin="0,5,0,10" />
+          <ItemsControl x:Name="SessionOverviewItems">
+            <ItemsControl.ItemTemplate>
+              <DataTemplate>
+                <StackPanel Margin="0,0,0,12">
+                  <TextBlock Text="{Binding Title}" FontSize="12" FontWeight="SemiBold" TextTrimming="CharacterEllipsis" ToolTip="{Binding Title}" Margin="0,0,0,5" />
+                  <ItemsControl ItemsSource="{Binding Sessions}">
+                    <ItemsControl.ItemTemplate>
+                      <DataTemplate>
+                        <Border Background="#151D18" CornerRadius="5" Padding="9,7" Margin="0,0,0,3">
+                          <Grid>
+                            <Grid.ColumnDefinitions><ColumnDefinition Width="105" /><ColumnDefinition Width="240" /><ColumnDefinition Width="*" /></Grid.ColumnDefinitions>
+                            <TextBlock Text="{Binding SessionLabel}" FontSize="10" FontWeight="SemiBold" VerticalAlignment="Top" />
+                            <TextBlock Grid.Column="1" Text="{Binding StatusText}" FontSize="10" Foreground="{StaticResource MutedBrush}" TextWrapping="Wrap" Margin="4,0" />
+                            <TextBlock Grid.Column="2" Text="{Binding MetricsText}" FontSize="10" TextWrapping="Wrap" />
+                          </Grid>
+                        </Border>
+                      </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                  </ItemsControl>
+                </StackPanel>
+              </DataTemplate>
+            </ItemsControl.ItemTemplate>
+          </ItemsControl>
+        </StackPanel>
+      </Border>
+
+      <DockPanel Margin="0,14,0,0" LastChildFill="False">
+        <TextBlock x:Name="LibraryStatusText" Text="Auswertungen werden geladen …" Foreground="{StaticResource MutedBrush}" FontSize="11" VerticalAlignment="Center" />
+        <StackPanel DockPanel.Dock="Right" Orientation="Horizontal">
+          <TextBlock Text="Modus:" Foreground="{StaticResource MutedBrush}" FontSize="11" VerticalAlignment="Center" Margin="0,0,7,0" />
+          <ComboBox x:Name="ModeFilterComboBox" Width="150" SelectedIndex="0" Margin="0,0,9,0">
+            <ComboBoxItem Content="Manuell/Acro" Tag="Acro" />
+            <ComboBoxItem Content="Angle" Tag="Angle" />
+            <ComboBoxItem Content="Horizon" Tag="Horizon" />
+          </ComboBox>
+          <Button Content="Sessions vergleichen" Click="Compare_Click" Padding="16,8" />
+        </StackPanel>
+      </DockPanel>
+
+      <Border x:Name="ComparisonResultsPanel" Visibility="Collapsed" Background="{StaticResource PanelBrush}" BorderBrush="{StaticResource LineBrush}" BorderThickness="1" CornerRadius="10" Padding="17" Margin="0,18,0,0">
+        <StackPanel>
+          <TextBlock Text="VERGLEICHSKONTEXT" Foreground="{StaticResource AccentBrush}" FontSize="10" FontWeight="Bold" />
+          <TextBlock x:Name="ComparisonContextText" Foreground="{StaticResource MutedBrush}" FontSize="11" TextWrapping="Wrap" Margin="0,6,0,12" />
+          <Border x:Name="CompatibilityNoticePanel" Background="#28251D" BorderBrush="#524934" BorderThickness="1" CornerRadius="8" Padding="11" Margin="0,0,0,14">
+            <TextBlock x:Name="CompatibilityNoticeText" Foreground="#F1D99A" FontSize="11" TextWrapping="Wrap" />
+          </Border>
+          <TextBlock Text="Soll-/Ist-Drehratenabweichung" FontSize="15" FontWeight="SemiBold" />
+          <TextBlock Text="Die Änderung ist B minus A. Negative Werte bedeuten eine kleinere gemessene Abweichung in B; das ist allein keine Tuning- oder Qualitätsaussage." Foreground="{StaticResource MutedBrush}" FontSize="11" TextWrapping="Wrap" Margin="0,4,0,10" />
+          <Grid>
+            <Grid.RowDefinitions><RowDefinition Height="Auto" /><RowDefinition Height="Auto" /><RowDefinition Height="Auto" /><RowDefinition Height="Auto" /></Grid.RowDefinitions>
+            <Border Grid.Row="0" Background="#20281F" CornerRadius="5" Padding="9,7" Margin="0,0,0,4">
+              <Grid><Grid.ColumnDefinitions><ColumnDefinition Width="90" /><ColumnDefinition /><ColumnDefinition /><ColumnDefinition /></Grid.ColumnDefinitions>
+                <TextBlock Text="Achse" Foreground="{StaticResource MutedBrush}" FontSize="10" FontWeight="Bold" />
+                <TextBlock Grid.Column="1" Text="Flug A · Ø / P95" Foreground="{StaticResource MutedBrush}" FontSize="10" FontWeight="Bold" />
+                <TextBlock Grid.Column="2" Text="Flug B · Ø / P95" Foreground="{StaticResource MutedBrush}" FontSize="10" FontWeight="Bold" />
+                <TextBlock Grid.Column="3" Text="Änderung B − A · Ø / P95" Foreground="{StaticResource MutedBrush}" FontSize="10" FontWeight="Bold" />
+              </Grid>
+            </Border>
+            <Border Grid.Row="1" Background="#151D18" CornerRadius="5" Padding="9,9" Margin="0,0,0,3"><Grid><Grid.ColumnDefinitions><ColumnDefinition Width="90" /><ColumnDefinition /><ColumnDefinition /><ColumnDefinition /></Grid.ColumnDefinitions><TextBlock Text="Roll" FontWeight="SemiBold" /><TextBlock x:Name="RollAValue" Grid.Column="1" FontSize="11" /><TextBlock x:Name="RollBValue" Grid.Column="2" FontSize="11" /><TextBlock x:Name="RollDeltaValue" Grid.Column="3" FontSize="11" /></Grid></Border>
+            <Border Grid.Row="2" Background="#151D18" CornerRadius="5" Padding="9,9" Margin="0,0,0,3"><Grid><Grid.ColumnDefinitions><ColumnDefinition Width="90" /><ColumnDefinition /><ColumnDefinition /><ColumnDefinition /></Grid.ColumnDefinitions><TextBlock Text="Pitch" FontWeight="SemiBold" /><TextBlock x:Name="PitchAValue" Grid.Column="1" FontSize="11" /><TextBlock x:Name="PitchBValue" Grid.Column="2" FontSize="11" /><TextBlock x:Name="PitchDeltaValue" Grid.Column="3" FontSize="11" /></Grid></Border>
+            <Border Grid.Row="3" Background="#151D18" CornerRadius="5" Padding="9,9"><Grid><Grid.ColumnDefinitions><ColumnDefinition Width="90" /><ColumnDefinition /><ColumnDefinition /><ColumnDefinition /></Grid.ColumnDefinitions><TextBlock Text="Yaw" FontWeight="SemiBold" /><TextBlock x:Name="YawAValue" Grid.Column="1" FontSize="11" /><TextBlock x:Name="YawBValue" Grid.Column="2" FontSize="11" /><TextBlock x:Name="YawDeltaValue" Grid.Column="3" FontSize="11" /></Grid></Border>
+          </Grid>
+          <TextBlock Text="Ø ist die mittlere absolute Abweichung; P95 ist das 95. Perzentil. Vergleiche sind am aussagekräftigsten bei ähnlichen Manövern, Raten und Flugbedingungen." Foreground="{StaticResource MutedBrush}" FontSize="10" TextWrapping="Wrap" Margin="0,10,0,0" />
+          <Border x:Name="PidComparisonPanel" Visibility="Collapsed" Background="#151D18" BorderBrush="{StaticResource LineBrush}" BorderThickness="1" CornerRadius="7" Padding="11" Margin="0,14,0,0">
+            <StackPanel>
+              <TextBlock Text="PID-TERM-AKTIVITÄT · ØABS A / B / ÄNDERUNG" Foreground="{StaticResource AccentBrush}" FontSize="10" FontWeight="Bold" />
+              <TextBlock x:Name="PidComparisonText" Foreground="#D6E0D7" FontSize="10" TextWrapping="Wrap" Margin="0,6,0,0" />
+              <TextBlock Text="Beschreibende Mittelwerte der absoluten P-, I-, D- und Feedforward-Terme in Decoder-Einheiten. Flugmodus und Manöver beeinflussen sie; daraus folgt allein keine Tuning-Empfehlung." Foreground="{StaticResource MutedBrush}" FontSize="10" TextWrapping="Wrap" Margin="0,6,0,0" />
+            </StackPanel>
+          </Border>
+          <Border x:Name="CliBaselineComparisonPanel" Visibility="Collapsed" Background="#151D18" BorderBrush="{StaticResource LineBrush}" BorderThickness="1" CornerRadius="7" Padding="11" Margin="0,14,0,0">
+            <StackPanel>
+              <TextBlock Text="TUNING-AUDIT UND CLI-AUSGANGSKONFIGURATION · A / B" Foreground="{StaticResource AccentBrush}" FontSize="10" FontWeight="Bold" />
+              <TextBlock x:Name="TuningRecommendationAuditText" Visibility="Collapsed" Foreground="#D6E0D7" FontSize="10" TextWrapping="Wrap" Margin="0,6,0,0" />
+              <TextBlock x:Name="CliProposalFollowUpText" Visibility="Collapsed" Foreground="#F1D99A" FontSize="10" TextWrapping="Wrap" Margin="0,6,0,0" />
+              <TextBlock x:Name="CliBaselineComparisonText" Foreground="#D6E0D7" FontSize="10" TextWrapping="Wrap" Margin="0,6,0,0" />
+              <TextBlock Text="Nur gemeinsam vorhandene Werte aus bestätigten `dump all`-Dateien werden verglichen. Abweichungen zeigen, was in B anders konfiguriert war; sie belegen allein weder, dass genau dieser Entwurf eingespielt wurde, noch einen besseren Flug." Foreground="{StaticResource MutedBrush}" FontSize="10" TextWrapping="Wrap" Margin="0,6,0,0" />
+            </StackPanel>
+          </Border>
+        </StackPanel>
+      </Border>
+    </StackPanel>
+  </ScrollViewer>
+</Window>

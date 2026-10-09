@@ -17,7 +17,9 @@ Alle Kopien und Archiveinträge wurden gegen ihre lokalen Quellen geprüft. Iden
 
 Neue Logs und zugehörige Berichte gehören unter `flight-data/`, beispielsweise in `raw/2026-10-11/`. Die Git-Ausschlüsse lassen dort BBL/BFL, CSV/Event, Analyse-JSON und CLI-Dateien ausdrücklich zu. Umfangreiche Decoder-Ausgaben können als ZIP unter `archives/` abgelegt werden. Vor dem Commit Größen und Dubletten prüfen und den Bestand im Manifest ergänzen.
 
-Die App speichert weiterhin in ihrem Windows-Dokumente-Ordner. Dateien von dort müssen in diesen Repository-Ordner übernommen werden; anschließend werden Änderungen mit Commit und Push gesichert. Es läuft keine automatische Hintergrundsynchronisierung. Auf weiteren Geräten das Repository klonen beziehungsweise vor der Arbeit aktualisieren.
+Die App speichert weiterhin in ihrem Windows-Dokumente-Ordner. Dateien von dort müssen in diesen Repository-Ordner übernommen werden; anschließend werden Änderungen mit Commit und Push gesichert. Es läuft keine automatische GitHub-Hintergrundsynchronisierung. Auf weiteren Geräten das Repository klonen beziehungsweise vor der Arbeit aktualisieren.
+
+Für die laufende geräteübergreifende Ablage wurde inzwischen der vorhandene OneDrive-Speicher gewählt. Die aktive App-Bibliothek liegt bereits im OneDrive-Dokumente-Ordner; OneDrive übernimmt bei aktivierter Synchronisierung die Cloud-Übertragung. Ein zusätzlicher Erstbestand liegt dort unter `Projektarchiv/2026-10-10/`. Details und Einrichtung weiterer Geräte: [`OneDrive-Speicher`](../docs/ONEDRIVE-STORAGE.md). GitHub-Uploads erfolgen weiterhin ausdrücklich über Commit und Push.
 
 Die App-Bibliothek lässt sich aus `library/` wiederherstellen. Beim Zusammenführen mit einer bestehenden Bibliothek deren Katalog und Dateien zuerst sichern; `log-library.json` nicht ungeprüft überschreiben.
 
